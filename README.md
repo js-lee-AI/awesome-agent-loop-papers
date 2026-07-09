@@ -3,7 +3,7 @@
 ![Papers](https://img.shields.io/badge/papers-317-08333D) ![Artifacts](https://img.shields.io/badge/artifacts-28-0F4C5C) ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen) ![License](https://img.shields.io/badge/license-CC--BY--4.0-lightgrey)
 
 Curated, section-organized reading list and artifact catalog for the survey
-**_The Agent Loop: A Survey of Control Strategies and Skills for LLM Agents_**
+**_The Agent Loop: A Survey of Control Strategies, Skills, and Harnesses for LLM Agents_**
 (Jungseob Lee, Korea University). Companion to the general survey *LLM Agents: A Survey*
 ([awesome-llm-agent-papers](https://github.com/js-lee-AI/awesome-llm-agent-papers)).
 
@@ -418,7 +418,7 @@ Widely-used open-source artifacts that define current practice. GitHub stars ver
 
 ```bibtex
 @article{lee2026agentloop,
-  title  = {The Agent Loop: A Survey of Control Strategies and Skills for LLM Agents},
+  title  = {The Agent Loop: A Survey of Control Strategies, Skills, and Harnesses for LLM Agents},
   author = {Lee, Jungseob},
   year   = {2026},
   eprint = {TODO},
