@@ -1,17 +1,39 @@
-# Awesome Agent Loop Papers
+<h1 align="center">🔁 Awesome Agent Loop Papers</h1>
 
-![Papers](https://img.shields.io/badge/papers-492-08333D) ![Artifacts](https://img.shields.io/badge/artifacts-28-0F4C5C) ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen) ![License](https://img.shields.io/badge/license-CC--BY--4.0-lightgrey)
+<p align="center">
+<b>492 papers and 28 open-source artifacts on the agent loop</b>: the reading list for<br>
+how LLM agents are controlled, trained, skilled, harnessed, evaluated, and broken.
+</p>
+
+<p align="center">
+<img src="https://img.shields.io/badge/papers-492-0F4C5C?style=flat-square&labelColor=2b2b2b" alt="papers indexed">
+<img src="https://img.shields.io/badge/artifacts-28-0F4C5C?style=flat-square&labelColor=2b2b2b" alt="open-source artifacts catalogued">
+<a href="LICENSE"><img src="https://img.shields.io/badge/License-CC--BY--4.0-0F4C5C?style=flat-square&labelColor=2b2b2b" alt="License: CC BY 4.0"></a>
+<a href="CONTRIBUTING.md"><img src="https://img.shields.io/badge/PRs-welcome-0F4C5C?style=flat-square&labelColor=2b2b2b" alt="PRs welcome"></a>
+</p>
+
+<p align="center">
+<a href="https://github.com/js-lee-AI/awesome-agent-loop-papers/stargazers"><img src="https://img.shields.io/github/stars/js-lee-AI/awesome-agent-loop-papers?style=flat-square&labelColor=2b2b2b&color=0F4C5C" alt="GitHub stars"></a>
+<a href="https://github.com/js-lee-AI/awesome-agent-loop-papers/network/members"><img src="https://img.shields.io/github/forks/js-lee-AI/awesome-agent-loop-papers?style=flat-square&labelColor=2b2b2b&color=0F4C5C" alt="GitHub forks"></a>
+</p>
+
+<p align="center">
+📚 <b>Companion series</b>: this is the deep dive into the <i>loop</i>. For the field-wide map of LLM agents, see <b><a href="https://github.com/js-lee-AI/awesome-llm-agent-papers">Awesome LLM Agent Papers</a></b>.
+</p>
+
+<p align="center"><sub><i> agent loop · agent harness · agent skills · ReAct · control strategies · agentic RL · termination · verification · context management · skill libraries · MCP · agent evaluation · agent safety</i></sub></p>
 
 Curated, section-organized reading list and artifact catalog for the survey
 **_The Agent Loop: A Survey of Control Strategies, Skills, and Harnesses for LLM Agents_**
-(Jungseob Lee, Korea University). Companion to the general survey *LLM Agents: A Survey*
-([awesome-llm-agent-papers](https://github.com/js-lee-AI/awesome-llm-agent-papers)).
+(Jungseob Lee, Korea University).
 
 > The survey treats the **agent loop**, not the model in isolation, as the unit of analysis: the loop *paradigms* that shape reasoning/action/search, the *trained* loops that absorb control into weights, the *mechanics* (termination, verification, context, recovery) that govern any loop, the *skills* that externalize competence into portable procedure, the *harnesses* that instantiate it, and the *evaluation* and *safety* problems it creates. This repo mirrors that structure.
 
-Currently indexing **492 papers** (365 cited in the survey text plus 127 additional curated 2026 papers, each verified against its arXiv record) across the survey's sections, plus **28 real-world open-source artifacts** (frameworks, coding harnesses, skill libraries, and registries). arXiv preprint: _to appear_.
+Currently indexing **492 papers** (365 cited in the survey text plus 127 additional curated 2026 papers, each verified against its arXiv record) across the survey's sections, plus **28 real-world open-source artifacts** (frameworks, coding harnesses, skill libraries, and registries). The preprint is forthcoming; this list is maintained independently of it.
 
+<a id="contents"></a>
 ## Contents
+
 - [Introduction](#introduction) (30)
 - [Background and Definitions](#background-and-definitions) (17)
 - [Loop Paradigms](#loop-paradigms) (30)
@@ -23,7 +45,10 @@ Currently indexing **492 papers** (365 cited in the survey text plus 127 additio
 - [Safety of the Loop](#safety-of-the-loop) (78)
 - [Open Challenges and Future Directions](#open-challenges-and-future-directions) (6)
 - [Real-world artifacts](#real-world-artifacts)
+- [Contributing](#contributing)
 - [Cite this survey](#cite-this-survey)
+
+Sections are collapsed by default. Click **Show N papers** to expand.
 
 ## Real-world artifacts
 
@@ -67,7 +92,12 @@ Widely-used open-source artifacts that define current practice. GitHub stars ver
 | [awesome-claude-code-subagents](https://github.com/VoltAgent/awesome-claude-code-subagents) | List | 23k | 150+ specialized Claude Code subagents |
 | [microsoft/skills](https://github.com/microsoft/skills) | Skills / registry | 2.7k | Agent Skills, MCP servers, and AGENTS.md packages |
 
+<sub><a href="#contents">↑ Back to Contents</a></sub>
+
 ## Introduction
+
+<details>
+<summary><b>Show 30 papers</b></summary>
 
 - [ReAct: Synergizing Reasoning and Acting in Language Models](https://arxiv.org/abs/2210.03629) — Yao et al. 2022
 - [ReWOO: Decoupling Reasoning from Observations for Efficient Augmented Language Models](https://arxiv.org/abs/2305.18323) — Xu et al. 2023
@@ -87,7 +117,7 @@ Widely-used open-source artifacts that define current practice. GitHub stars ver
 - [UI-TARS-2 Technical Report: Advancing GUI Agent with Multi-Turn Reinforcement Learning](https://arxiv.org/abs/2509.02544) — Wang et al. 2025
 - [Introducing computer use, a new Claude 3.5 Sonnet, and Claude 3.5 Haiku](https://www.anthropic.com/news/3-5-models-and-computer-use) — Anthropic 2024
 - [DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning](https://arxiv.org/abs/2501.12948) — DeepSeek-AI et al. 2025
-- [Kimi K2: Open Agentic Intelligence](https://arxiv.org/abs/2507.20534) — Team 2025
+- [Kimi K2: Open Agentic Intelligence](https://arxiv.org/abs/2507.20534) — Kimi Team 2025
 - [Voyager: An Open-Ended Embodied Agent with Large Language Models](https://arxiv.org/abs/2305.16291) — Wang et al. 2023
 - [ExpeL: LLM Agents Are Experiential Learners](https://arxiv.org/abs/2308.10144) — Zhao et al. 2023
 - [ReasoningBank: Scaling Agent Self-Evolving with Reasoning Memory](https://arxiv.org/abs/2509.25140) — Ouyang et al. 2025
@@ -100,7 +130,14 @@ Widely-used open-source artifacts that define current practice. GitHub stars ver
 - [Can LLMs Correct Themselves? A Benchmark of Self-Correction in LLMs](https://arxiv.org/abs/2510.16062) — Tie et al. 2025
 - [Agentless: Demystifying LLM-based Software Engineering Agents](https://arxiv.org/abs/2407.01489) — Xia et al. 2024
 
+</details>
+
+<sub><a href="#contents">↑ Back to Contents</a></sub>
+
 ## Background and Definitions
+
+<details>
+<summary><b>Show 17 papers</b></summary>
 
 - [Cognitive Architectures for Language Agents](https://arxiv.org/abs/2309.02427) — Sumers et al. 2023
 - [The Agent Use of Agent Beings: Agent Cybernetics Is the Missing Science of Foundation Agents](https://arxiv.org/abs/2605.10754) — Wang et al. 2026
@@ -123,7 +160,14 @@ Widely-used open-source artifacts that define current practice. GitHub stars ver
 
 - [The Hitchhiker's Guide to Agentic AI: From Foundations to Systems](https://arxiv.org/abs/2606.24937) — Roitman 2026 · Practitioner book covering full agentic AI stack from foundations to production systems.
 
+</details>
+
+<sub><a href="#contents">↑ Back to Contents</a></sub>
+
 ## Loop Paradigms
+
+<details>
+<summary><b>Show 30 papers</b></summary>
 
 - [An LLM Compiler for Parallel Function Calling](https://arxiv.org/abs/2312.04511) — Kim et al. 2023
 - [AdaPlanner: Adaptive Planning from Feedback with Language Models](https://arxiv.org/abs/2305.16653) — Sun et al. 2023
@@ -159,7 +203,14 @@ Widely-used open-source artifacts that define current practice. GitHub stars ver
 
 - [Bridge Evidence: Static Retrieval Utility Does Not Predict Causal Utility in Multi-Step Agentic Search](https://arxiv.org/abs/2607.15253) — Mukhopadhyay et al. 2026 · Static retrieval-utility metrics fail to predict causal usefulness in multi-step agentic search loops.
 
+</details>
+
+<sub><a href="#contents">↑ Back to Contents</a></sub>
+
 ## Loop Mechanics
+
+<details>
+<summary><b>Show 72 papers</b></summary>
 
 - [s1: Simple Test-Time Scaling](https://arxiv.org/abs/2501.19393) — Muennighoff et al. 2025
 - [Efficiently Scaling LLM Reasoning with Certaindex](https://arxiv.org/abs/2412.20993) — Fu et al. 2024
@@ -217,7 +268,7 @@ Widely-used open-source artifacts that define current practice. GitHub stars ver
 - [Exploring Cross-Scenario Generality of Agentic Memory Systems: Diagnostics and a Strong Baseline](https://arxiv.org/abs/2606.04315) — Chen et al. 2026 · Diagnoses poor cross-scenario generalization of memory systems and proposes a strong baseline.
 - [LAMP: Lean-based Agentic framework with MCP and Proof Repair](https://arxiv.org/abs/2606.28841) — R et al. 2026 · Agentic framework with MCP integration and proof-repair loop for Lean theorem proving.
 - [Code Isn't Memory: A Structural Codebase Index Inside a Coding Agent](https://arxiv.org/abs/2606.22417) — Bhola et al. 2026 · Controlled study of structural codebase indexing effect on coding-agent cost and resolve rate.
-- [When Does Restricting a Coding Agent to execute_code Help? A Regime $\times$ Agent-Design Ablation](https://arxiv.org/abs/2607.10569) — Yang et al. 2026 · Ablation on restricting coding agents to code-execution-only tool surface vs bash/IDE primitives.
+- [When Does Restricting a Coding Agent to execute_code Help? A Regime × Agent-Design Ablation](https://arxiv.org/abs/2607.10569) — Yang et al. 2026 · Ablation on restricting coding agents to code-execution-only tool surface vs bash/IDE primitives.
 - [Dockerless: Environment-Free Program Verifier for Coding Agents](https://arxiv.org/abs/2606.28436) — Zeng et al. 2026 · Environment-free program verifier removing Docker dependency for coding-agent trajectory/reward verification.
 - [ToolChain-CRC: Conformal Risk Control for Agentic AI Under Retrieval and Tool-Use Drift](https://arxiv.org/abs/2606.18467) — Opoku et al. 2026 · Conformal risk control detecting retrieval/tool-use drift hidden behind acceptable-looking final answers.
 - [PROJECTMEM: A Local-First, Event-Sourced Memory and Judgment Layer for AI Coding Agents](https://arxiv.org/abs/2606.12329) — Malo et al. 2026 · Local-first event-sourced memory/judgment layer avoiding repeated context reconstruction in coding agents.
@@ -237,7 +288,14 @@ Widely-used open-source artifacts that define current practice. GitHub stars ver
 - [Portable Agent Memory: A Protocol for Cryptographically-Verified Memory Transfer Across Heterogeneous AI Agents](https://arxiv.org/abs/2605.11032) — Ravindran 2026 · Protocol for cryptographically-verified transfer of persistent episodic/procedural agent memory across heterogeneous agents.
 - [Debug2Fix: Can Interactive Debugging Help Coding Agents Fix More Bugs?](https://arxiv.org/abs/2602.18571) — Garg et al. 2026 · Tests whether interactive/stateful debugging tools improve coding agents' bug-fixing verification-recovery loop.
 
+</details>
+
+<sub><a href="#contents">↑ Back to Contents</a></sub>
+
 ## Trained Loops
+
+<details>
+<summary><b>Show 58 papers</b></summary>
 
 - [ToRL: Scaling Tool-Integrated RL](https://arxiv.org/abs/2503.23383) — Li et al. 2025
 - [DeepResearcher: Scaling Deep Research via Reinforcement Learning in Real-World Environments](https://arxiv.org/abs/2504.03160) — Zheng et al. 2025
@@ -301,7 +359,14 @@ Widely-used open-source artifacts that define current practice. GitHub stars ver
 - [No Time Like the Present: Agentic Test-Time Training for LLM Agents](https://arxiv.org/abs/2607.03441) — Wang et al. 2026 · Continuous test-time training adapting agent weights during long episodes to counter degradation and repetition.
 - [Qwen-AgentWorld: Language World Models for General Agents](https://arxiv.org/abs/2606.24597) — Zuo et al. 2026 · Builds language world models to improve planning/reasoning for general LLM agents.
 
+</details>
+
+<sub><a href="#contents">↑ Back to Contents</a></sub>
+
 ## Skills
+
+<details>
+<summary><b>Show 66 papers</b></summary>
 
 - [Agent Workflow Memory](https://arxiv.org/abs/2409.07429) — Wang et al. 2024
 - [ToolLLM: Facilitating Large Language Models to Master 16000+ Real-world APIs](https://arxiv.org/abs/2307.16789) — Qin et al. 2023
@@ -373,7 +438,14 @@ Widely-used open-source artifacts that define current practice. GitHub stars ver
 - [SkillJuror: Measuring How Agent Skill Organization Changes Runtime Behavior](https://arxiv.org/abs/2606.11543) — Chen et al. 2026 · Shows progressive-disclosure skill organization changes agent runtime behavior independent of content.
 - [Skill Coverage: A Test Adequacy Metric for Agent Skills](https://arxiv.org/abs/2606.20659) — Tan et al. 2026 · Introduces test-adequacy coverage metric for whether agents actually exercise skill instructions.
 
+</details>
+
+<sub><a href="#contents">↑ Back to Contents</a></sub>
+
 ## Harnesses and Orchestration
+
+<details>
+<summary><b>Show 79 papers</b></summary>
 
 - [OpenHands: An Open Platform for AI Software Developers as Generalist Agents](https://arxiv.org/abs/2407.16741) — Wang et al. 2024
 - [AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation](https://arxiv.org/abs/2308.08155) — Wu et al. 2023
@@ -402,30 +474,30 @@ Widely-used open-source artifacts that define current practice. GitHub stars ver
 - [Dissecting model behavior through agent trajectories](https://arxiv.org/abs/2606.17454) — Gupta et al. 2026
 - [MemoHarness: Agent Harnesses That Learn from Experience](https://arxiv.org/abs/2607.14159) — Huang et al. 2026
 - [When Do Multi-Agent Systems Help? An Information Bottleneck Perspective](https://arxiv.org/abs/2607.16133) — Yu et al. 2026
-- [AutoGPT](https://github.com/Significant-Gravitas/AutoGPT) — Gravitas 2023
+- [AutoGPT](https://github.com/Significant-Gravitas/AutoGPT) — Significant Gravitas 2023
 - [Dify](https://github.com/langgenius/dify) — LangGenius 2025
 - [MetaGPT](https://github.com/geekan/MetaGPT) — DeepWisdom 2024
 - [AutoGen](https://github.com/microsoft/autogen) — Microsoft 2025
-- [CrewAI](https://github.com/crewAIInc/crewAI) — Inc. 2025
+- [CrewAI](https://github.com/crewAIInc/crewAI) — CrewAI Inc. 2025
 - [LangGraph](https://github.com/langchain-ai/langgraph) — LangChain 2025
-- [DSPy](https://github.com/stanfordnlp/dspy) — NLP 2025
-- [smolagents](https://github.com/huggingface/smolagents) — Face 2025
+- [DSPy](https://github.com/stanfordnlp/dspy) — Stanford NLP 2025
+- [smolagents](https://github.com/huggingface/smolagents) — Hugging Face 2025
 - [opencode](https://github.com/sst/opencode) — SST 2025
 - [Claude Code](https://github.com/anthropics/claude-code) — Anthropic 2025
 - [Codex CLI](https://github.com/openai/codex) — OpenAI 2025
-- [OpenHands](https://github.com/OpenHands/OpenHands) — (All-Hands-AI) 2025
+- [OpenHands](https://github.com/OpenHands/OpenHands) — OpenHands (All-Hands-AI) 2025
 - [Cline](https://github.com/cline/cline) — Cline 2025
 - [goose](https://github.com/block/goose) — Block 2025
 - [aider](https://github.com/Aider-AI/aider) — Aider-AI 2025
 - [Continue](https://github.com/continuedev/continue) — Continue 2025
-- [SWE-agent](https://github.com/SWE-agent/SWE-agent) — SWE-agent 2025
+- [SWE-agent](https://github.com/SWE-agent/SWE-agent) — Princeton NLP / SWE-agent 2025
 - [claude-agent-sdk-python](https://github.com/anthropics/claude-agent-sdk-python) — Anthropic 2025
 - [Superpowers](https://github.com/obra/superpowers) — obra 2025
-- [awesome-chatgpt-prompts](https://github.com/f/awesome-chatgpt-prompts) — Akin 2023
+- [awesome-chatgpt-prompts](https://github.com/f/awesome-chatgpt-prompts) — Fatih Kadir Akin 2023
 - [Anthropic Agent Skills](https://github.com/anthropics/skills) — Anthropic 2025
 - [System Prompts and Models of AI Tools](https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools) — x1xhlol 2025
 - [awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers) — punkpeye 2025
-- [Model Context Protocol Servers](https://github.com/modelcontextprotocol/servers) — Protocol 2025
+- [Model Context Protocol Servers](https://github.com/modelcontextprotocol/servers) — Model Context Protocol 2025
 - [wshobson/agents](https://github.com/wshobson/agents) — wshobson 2025
 - [awesome-claude-code-subagents](https://github.com/VoltAgent/awesome-claude-code-subagents) — VoltAgent 2025
 - [microsoft/skills](https://github.com/microsoft/skills) — Microsoft 2025
@@ -458,12 +530,19 @@ Widely-used open-source artifacts that define current practice. GitHub stars ver
 - [VeRO: A Harness for Agents to Optimize Agents](https://arxiv.org/abs/2602.22480) — Ursekar et al. 2026 · Introduces harness optimization as a task: coding agents iteratively editing and evaluating another agent's harness code.
 - [SWE-World: Building Software Engineering Agents in Docker-Free Environments](https://arxiv.org/abs/2602.03419) — Sun et al. 2026 · Docker-free execution environments for SWE agents, removing containerized-execution-feedback bottleneck at scale.
 
+</details>
+
+<sub><a href="#contents">↑ Back to Contents</a></sub>
+
 ## Evaluation
+
+<details>
+<summary><b>Show 56 papers</b></summary>
 
 - [WebArena: A Realistic Web Environment for Building Autonomous Agents](https://arxiv.org/abs/2307.13854) — Zhou et al. 2024
 - [OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments](https://arxiv.org/abs/2404.07972) — Xie et al. 2024
 - [GAIA: a benchmark for General AI Assistants](https://arxiv.org/abs/2311.12983) — Mialon et al. 2023
-- [ensuremathtau-bench: A Benchmark for Tool-Agent-User Interaction in Real-World Domains](https://arxiv.org/abs/2406.12045) — Yao et al. 2024
+- [τ-bench: A Benchmark for Tool-Agent-User Interaction in Real-World Domains](https://arxiv.org/abs/2406.12045) — Yao et al. 2024
 - [AgentBench: Evaluating LLMs as Agents](https://arxiv.org/abs/2308.03688) — Liu et al. 2024
 - [Establishing Best Practices for Building Rigorous Agentic Benchmarks](https://arxiv.org/abs/2507.02825) — Zhu et al. 2025
 - [Stop Comparing LLM Agents Without Disclosing the Harness](https://arxiv.org/abs/2605.23950) — Zhang et al. 2026
@@ -520,7 +599,14 @@ Widely-used open-source artifacts that define current practice. GitHub stars ver
 - [Agent trajectories as programs: fingerprinting and programming coding-agent behavior](https://arxiv.org/abs/2606.16988) — Oderinwale 2026 · Fingerprints coding agents' behavioral trajectories to compare procedural, not just outcome, differences.
 - [Evaluating Plan Compliance in Autonomous Programming Agents](https://arxiv.org/abs/2604.12147) — Liu et al. 2026 · Measures how faithfully autonomous programming agents follow prescribed task-specific plans across navigation/patch/validation phases.
 
+</details>
+
+<sub><a href="#contents">↑ Back to Contents</a></sub>
+
 ## Safety of the Loop
+
+<details>
+<summary><b>Show 78 papers</b></summary>
 
 - [Not what you've signed up for: Compromising Real-World LLM-Integrated Applications with Indirect Prompt Injection](https://arxiv.org/abs/2302.12173) — Greshake et al. 2023
 - [InjecAgent: Benchmarking Indirect Prompt Injections in Tool-Integrated Large Language Model Agents](https://arxiv.org/abs/2403.02691) — Zhan et al. 2024
@@ -538,7 +624,7 @@ Widely-used open-source artifacts that define current practice. GitHub stars ver
 - [GuardAgent: Safeguard LLM Agents by a Guard Agent via Knowledge-Enabled Reasoning](https://arxiv.org/abs/2406.09187) — Xiang et al. 2024
 - [ShieldAgent: Shielding Agents via Verifiable Safety Policy Reasoning](https://arxiv.org/abs/2503.22738) — Chen et al. 2025
 - [AgentSpec: Customizable Runtime Enforcement for Safe and Reliable LLM Agents](https://arxiv.org/abs/2503.18666) — Wang et al. 2025
-- [Regulation (EU) 2024/1689 of the European Parliament and of the Council (Artificial Intelligence Act)](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) — Parliament et al. 2024
+- [Regulation (EU) 2024/1689 of the European Parliament and of the Council (Artificial Intelligence Act)](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) — European Parliament et al. 2024
 - [When Agents Do Not Stop: Uncovering Infinite Agentic Loops in LLM Agents](https://arxiv.org/abs/2607.01641) — Hou et al. 2026
 - [OTora: A Unified Red Teaming Framework for Reasoning-Level Denial-of-Service in LLM Agents](https://arxiv.org/abs/2605.08876) — Li et al. 2026
 - [From Shield to Target: Denial-of-Service Attacks on LLM-Based Agent Guardrails](https://arxiv.org/abs/2606.14517) — Zhou et al. 2026
@@ -604,7 +690,14 @@ Widely-used open-source artifacts that define current practice. GitHub stars ver
 - [Security Considerations for Artificial Intelligence Agents](https://arxiv.org/abs/2603.12230) — Li et al. 2026 · Industry (Perplexity) perspective on frontier agent security submitted to NIST/CAISI, informed by production-scale deployment.
 - [MCP-ITP: An Automated Framework for Implicit Tool Poisoning in MCP](https://arxiv.org/abs/2601.07395) — Li et al. 2026 · Automated framework for implicit tool-poisoning attacks embedded in MCP tool metadata.
 
+</details>
+
+<sub><a href="#contents">↑ Back to Contents</a></sub>
+
 ## Open Challenges and Future Directions
+
+<details>
+<summary><b>Show 6 papers</b></summary>
 
 - [The 2025 AI Agent Index: Documenting Technical and Safety Features of Deployed Agentic AI Systems](https://arxiv.org/abs/2602.17753) — Staufer et al. 2026
 - [Measuring AI Ability to Complete Long Software Tasks](https://arxiv.org/abs/2503.14499) — Kwa et al. 2025
@@ -613,19 +706,31 @@ Widely-used open-source artifacts that define current practice. GitHub stars ver
 - [FrugalGPT: How to Use Large Language Models While Reducing Cost and Improving Performance](https://arxiv.org/abs/2305.05176) — Chen et al. 2023
 - [Agentic misalignment: How LLMs could be insider threats](https://www.anthropic.com/research/agentic-misalignment) — Anthropic 2025
 
+</details>
+
+<sub><a href="#contents">↑ Back to Contents</a></sub>
+
+<a id="contributing"></a>
+## Contributing
+
+The loop literature moves fast and this list is certainly missing strong work. If a paper belongs here, **including your own**, please open a PR or an issue. Add it under the section that matches where it enters the loop, keep entries to one line (`- [Title](link) - First-author et al. Year`), and prefer the arXiv abstract page. See **[CONTRIBUTING.md](CONTRIBUTING.md)** for the entry format.
+
+Sibling list, for the field-wide map rather than the loop: **[Awesome LLM Agent Papers](https://github.com/js-lee-AI/awesome-llm-agent-papers)**.
+
+<sub><a href="#contents">↑ Back to Contents</a></sub>
+
+<a id="cite-this-survey"></a>
 ## Cite this survey
+
+If this list or the survey is useful to you, please cite:
 
 ```bibtex
 @article{lee2026agentloop,
-  title  = {The Agent Loop: A Survey of Control Strategies, Skills, and Harnesses for LLM Agents},
-  author = {Lee, Jungseob},
-  year   = {2026},
-  eprint = {TODO},
-  archivePrefix = {arXiv},
-  primaryClass  = {cs.AI}
+  title   = {The Agent Loop: A Survey of Control Strategies, Skills, and Harnesses for LLM Agents},
+  author  = {Lee, Jungseob},
+  year    = {2026},
+  note    = {Preprint}
 }
 ```
 
-## Contributing
-
-PRs welcome: add a paper under the section that matches where it enters the loop, keep entries one line (`- [Title](link) — First-author et al. Year`), and prefer the arXiv abstract page. This list is continuously updated alongside the survey.
+<sub><a href="#contents">↑ Back to Contents</a></sub>
