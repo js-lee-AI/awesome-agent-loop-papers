@@ -600,6 +600,7 @@ Widely-used open-source artifacts that define current practice. GitHub stars ver
 - [StaminaBench: Stress-Testing Coding Agents over 100 Interaction Turns](https://arxiv.org/abs/2606.19613) — Sobal et al. 2026 · Stress-tests coding agents over 100+ turns to measure long-horizon degradation, not task-solve rate.
 - [Agent trajectories as programs: fingerprinting and programming coding-agent behavior](https://arxiv.org/abs/2606.16988) — Oderinwale 2026 · Fingerprints coding agents' behavioral trajectories to compare procedural, not just outcome, differences.
 - [Evaluating Plan Compliance in Autonomous Programming Agents](https://arxiv.org/abs/2604.12147) — Liu et al. 2026 · Measures how faithfully autonomous programming agents follow prescribed task-specific plans across navigation/patch/validation phases.
+- [ClawBench: Can AI Agents Complete Everyday Online Tasks?](https://arxiv.org/abs/2604.08523) — Zhang et al. 2026 · Evaluates browser agents on everyday tasks across live production websites with isolated execution and five-layer traces.
 
 </details>
 
