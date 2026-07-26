@@ -25,7 +25,9 @@ how LLM agents are controlled, trained, skilled, harnessed, evaluated, and broke
 
 Curated, section-organized reading list and artifact catalog for the survey
 **_The Agent Loop: A Survey of Control Strategies, Skills, and Harnesses for LLM Agents_**
-(Jungseob Lee, Korea University).
+(Jungseob Lee, Korea University; Chanjun Park, Soongsil University).
+
+📄 **Read the paper**: [paper/the-agent-loop-survey.pdf](paper/the-agent-loop-survey.pdf) (59 pages). Posted here while the preprint record is being set up.
 
 > The survey treats the **agent loop**, not the model in isolation, as the unit of analysis: the loop *paradigms* that shape reasoning/action/search, the *trained* loops that absorb control into weights, the *mechanics* (termination, verification, context, recovery) that govern any loop, the *skills* that externalize competence into portable procedure, the *harnesses* that instantiate it, and the *evaluation* and *safety* problems it creates. This repo mirrors that structure.
 
@@ -727,10 +729,12 @@ If this list or the survey is useful to you, please cite:
 ```bibtex
 @article{lee2026agentloop,
   title   = {The Agent Loop: A Survey of Control Strategies, Skills, and Harnesses for LLM Agents},
-  author  = {Lee, Jungseob},
+  author  = {Lee, Jungseob and Park, Chanjun},
   year    = {2026},
   note    = {Preprint}
 }
 ```
+
+The full text is in this repository at [`paper/the-agent-loop-survey.pdf`](paper/the-agent-loop-survey.pdf) until the preprint record is live.
 
 <sub><a href="#contents">↑ Back to Contents</a></sub>
