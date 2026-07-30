@@ -1,12 +1,12 @@
 <h1 align="center">🔁 Awesome Agent Loop Papers</h1>
 
 <p align="center">
-<b>492 papers and 28 open-source artifacts on the agent loop</b>: the reading list for<br>
+<b>493 papers and 28 open-source artifacts on the agent loop</b>: the reading list for<br>
 how LLM agents are controlled, trained, skilled, harnessed, evaluated, and broken.
 </p>
 
 <p align="center">
-<img src="https://img.shields.io/badge/papers-492-0F4C5C?style=flat-square&labelColor=2b2b2b" alt="papers indexed">
+<img src="https://img.shields.io/badge/papers-493-0F4C5C?style=flat-square&labelColor=2b2b2b" alt="papers indexed">
 <img src="https://img.shields.io/badge/artifacts-28-0F4C5C?style=flat-square&labelColor=2b2b2b" alt="open-source artifacts catalogued">
 <a href="LICENSE"><img src="https://img.shields.io/badge/License-CC--BY--4.0-0F4C5C?style=flat-square&labelColor=2b2b2b" alt="License: CC BY 4.0"></a>
 <a href="CONTRIBUTING.md"><img src="https://img.shields.io/badge/PRs-welcome-0F4C5C?style=flat-square&labelColor=2b2b2b" alt="PRs welcome"></a>
@@ -31,7 +31,7 @@ Curated, section-organized reading list and artifact catalog for the survey
 
 > The survey treats the **agent loop**, not the model in isolation, as the unit of analysis: the loop *paradigms* that shape reasoning/action/search, the *trained* loops that absorb control into weights, the *mechanics* (termination, verification, context, recovery) that govern any loop, the *skills* that externalize competence into portable procedure, the *harnesses* that instantiate it, and the *evaluation* and *safety* problems it creates. This repo mirrors that structure.
 
-Currently indexing **492 papers** (365 cited in the survey text plus 127 additional curated 2026 papers, each verified against its arXiv record) across the survey's sections, plus **28 real-world open-source artifacts** (frameworks, coding harnesses, skill libraries, and registries). The preprint is forthcoming; this list is maintained independently of it.
+Currently indexing **493 papers** (365 cited in the survey text plus 128 additional curated 2026 papers, each verified against its arXiv record) across the survey's sections, plus **28 real-world open-source artifacts** (frameworks, coding harnesses, skill libraries, and registries). The preprint is forthcoming; this list is maintained independently of it.
 
 <a id="contents"></a>
 ## Contents
@@ -43,12 +43,14 @@ Currently indexing **492 papers** (365 cited in the survey text plus 127 additio
 - [Trained Loops](#trained-loops) (58)
 - [Skills](#skills) (66)
 - [Harnesses and Orchestration](#harnesses-and-orchestration) (79)
-- [Evaluation](#evaluation) (56)
+- [Evaluation](#evaluation) (57)
 - [Safety of the Loop](#safety-of-the-loop) (78)
 - [Open Challenges and Future Directions](#open-challenges-and-future-directions) (6)
 - [Real-world artifacts](#real-world-artifacts)
 - [Contributing](#contributing)
+- [Contributors](#contributors)
 - [Cite this survey](#cite-this-survey)
+- [Updates](#updates)
 
 Sections are collapsed by default. Click **Show N papers** to expand.
 
@@ -539,7 +541,7 @@ Widely-used open-source artifacts that define current practice. GitHub stars ver
 ## Evaluation
 
 <details>
-<summary><b>Show 56 papers</b></summary>
+<summary><b>Show 57 papers</b></summary>
 
 - [WebArena: A Realistic Web Environment for Building Autonomous Agents](https://arxiv.org/abs/2307.13854) — Zhou et al. 2024
 - [OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments](https://arxiv.org/abs/2404.07972) — Xie et al. 2024
@@ -580,7 +582,7 @@ Widely-used open-source artifacts that define current practice. GitHub stars ver
 - [AgentLens: Production-Assessed Trajectory Reviews for Coding Agent Evaluation](https://arxiv.org/abs/2607.06624) — Podivilov et al. 2026
 - [PACE: A Proxy for Agentic Capability Evaluation](https://arxiv.org/abs/2607.02032) — Song et al. 2026
 
-*Additional 2026 reading (18), curated alongside the survey (not yet cited in the paper text):*
+*Additional 2026 reading (19), curated alongside the survey (not yet cited in the paper text):*
 
 - [Claw-SWE-Bench: A Benchmark for Evaluating OpenClaw-style Agent Harnesses on Coding Tasks](https://arxiv.org/abs/2606.12344) — Zheng et al. 2026 · Benchmark adapting SWE-bench scoring contract to general-purpose OpenClaw-style agent harnesses.
 - [PerspectiveGap: A Benchmark for Multi-Agent Orchestration Prompting](https://arxiv.org/abs/2606.08878) — Sun et al. 2026 · Benchmark measuring LLMs' ability to compose orchestration prompts distributing knowledge across sub-agents.
@@ -600,7 +602,7 @@ Widely-used open-source artifacts that define current practice. GitHub stars ver
 - [StaminaBench: Stress-Testing Coding Agents over 100 Interaction Turns](https://arxiv.org/abs/2606.19613) — Sobal et al. 2026 · Stress-tests coding agents over 100+ turns to measure long-horizon degradation, not task-solve rate.
 - [Agent trajectories as programs: fingerprinting and programming coding-agent behavior](https://arxiv.org/abs/2606.16988) — Oderinwale 2026 · Fingerprints coding agents' behavioral trajectories to compare procedural, not just outcome, differences.
 - [Evaluating Plan Compliance in Autonomous Programming Agents](https://arxiv.org/abs/2604.12147) — Liu et al. 2026 · Measures how faithfully autonomous programming agents follow prescribed task-specific plans across navigation/patch/validation phases.
-- [ClawBench: Can AI Agents Complete Everyday Online Tasks?](https://arxiv.org/abs/2604.08523) — Zhang et al. 2026 · Evaluates browser agents on everyday tasks across live production websites with isolated execution and five-layer traces.
+- [ClawBench: Can AI Agents Complete Everyday Online Tasks?](https://arxiv.org/abs/2604.08523) — Zhang et al. 2026 · 153 everyday online tasks on 144 real platforms, with the final submission intercepted so nothing is actually bought or booked.
 
 </details>
 
@@ -722,6 +724,20 @@ Sibling list, for the field-wide map rather than the loop: **[Awesome LLM Agent 
 
 <sub><a href="#contents">↑ Back to Contents</a></sub>
 
+<a id="contributors"></a>
+## Contributors
+
+Thanks to everyone who has suggested, verified, or annotated a paper here:
+
+| | Contributor | Contributed |
+|---|---|---|
+| <a href="https://github.com/reacher-z"><img src="https://github.com/reacher-z.png?size=48" width="48" height="48" alt="@reacher-z"></a> | **[@reacher-z](https://github.com/reacher-z)** | ClawBench, a live-web browser-agent benchmark, under Evaluation ([#1](https://github.com/js-lee-AI/awesome-agent-loop-papers/pull/1)) |
+| <a href="https://github.com/js-lee-AI"><img src="https://github.com/js-lee-AI.png?size=48" width="48" height="48" alt="@js-lee-AI"></a> | **[@js-lee-AI](https://github.com/js-lee-AI)** | Maintainer |
+
+<sub>This README is generated, so the commit graph mostly records whoever ran the generator. The table is kept by hand instead, so that credit follows the contribution.</sub>
+
+<sub><a href="#contents">↑ Back to Contents</a></sub>
+
 <a id="cite-this-survey"></a>
 ## Cite this survey
 
@@ -737,5 +753,16 @@ If this list or the survey is useful to you, please cite:
 ```
 
 The full text is in this repository at [`paper/the-agent-loop-survey.pdf`](paper/the-agent-loop-survey.pdf) until the preprint record is live.
+
+<sub><a href="#contents">↑ Back to Contents</a></sub>
+
+<a id="updates"></a>
+## Updates
+
+- **2026-07-30**: ClawBench added under Evaluation by [@reacher-z](https://github.com/reacher-z), who helps maintain it, and folded into the generator so it survives a rebuild. 492 to 493.
+- **2026-07-27**: Survey PDF posted in `paper/`, readable here while the preprint record is being set up.
+- **2026-07-25**: README brought up to the sibling list's standard, and two generator bugs fixed: a math macro was mangling τ-bench, and corporate author names were being truncated to their last word.
+- **2026-07-21**: 176 verified 2026 papers added: 492 total, 365 cited in the survey text plus 127 curated alongside it.
+- **2026-07-10**: Initial release. 317 papers by section plus 28 real-world artifacts.
 
 <sub><a href="#contents">↑ Back to Contents</a></sub>
