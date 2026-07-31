@@ -1,13 +1,13 @@
 <h1 align="center">🔁 Awesome Agent Loop Papers</h1>
 
 <p align="center">
-<b>524 papers and 28 open-source artifacts on the agent loop</b>: the reading list for<br>
+<b>524 papers and 60 open-source artifacts on the agent loop</b>: the reading list for<br>
 how LLM agents are controlled, trained, skilled, harnessed, evaluated, and broken.
 </p>
 
 <p align="center">
 <img src="https://img.shields.io/badge/papers-524-0F4C5C?style=flat-square&labelColor=2b2b2b" alt="papers indexed">
-<img src="https://img.shields.io/badge/artifacts-28-0F4C5C?style=flat-square&labelColor=2b2b2b" alt="open-source artifacts catalogued">
+<img src="https://img.shields.io/badge/artifacts-60-0F4C5C?style=flat-square&labelColor=2b2b2b" alt="open-source artifacts catalogued">
 <a href="LICENSE"><img src="https://img.shields.io/badge/License-CC--BY--4.0-0F4C5C?style=flat-square&labelColor=2b2b2b" alt="License: CC BY 4.0"></a>
 <a href="CONTRIBUTING.md"><img src="https://img.shields.io/badge/PRs-welcome-0F4C5C?style=flat-square&labelColor=2b2b2b" alt="PRs welcome"></a>
 </p>
@@ -31,7 +31,7 @@ Curated, section-organized reading list and artifact catalog for the survey
 
 > The survey treats the **agent loop**, not the model in isolation, as the unit of analysis: the loop *paradigms* that shape reasoning/action/search, the *trained* loops that absorb control into weights, the *mechanics* (termination, verification, context, recovery) that govern any loop, the *skills* that externalize competence into portable procedure, the *harnesses* that instantiate it, and the *evaluation* and *safety* problems it creates. This repo mirrors that structure.
 
-Currently indexing **524 papers** (365 cited in the survey text plus 159 additional curated 2026 papers, each verified against its arXiv record) across the survey's sections, plus **28 real-world open-source artifacts** (frameworks, coding harnesses, skill libraries, and registries). The preprint is forthcoming; this list is maintained independently of it.
+Currently indexing **524 papers** (365 cited in the survey text plus 159 additional curated 2026 papers, each verified against its arXiv record) across the survey's sections, plus **60 real-world open-source artifacts** (frameworks, coding harnesses, memory and sandbox infrastructure, skill libraries, and registries). The preprint is forthcoming; this list is maintained independently of it.
 
 <a id="contents"></a>
 ## Contents
@@ -56,45 +56,84 @@ Sections are collapsed by default. Click **Show N papers** to expand.
 
 ## Real-world artifacts
 
-Widely-used open-source artifacts that define current practice. GitHub stars verified via the GitHub API, 2026-07-10. Many of the highest-starred (OpenCode, Claude Code, AutoGPT, Anthropic Skills, superpowers) have **no accompanying paper**, so the survey and this table are intended as their citable reference.
+Widely-used open-source artifacts that define current practice. Star counts and repository names read from the GitHub API on 2026-07-31. Many of the highest-starred (OpenCode, Claude Code, AutoGPT, Anthropic Skills, superpowers) have **no accompanying paper**, so the survey and this table are intended as their citable reference.
 
 ### Frameworks and coding harnesses
 
 | Artifact | Category | Stars | Role |
 |---|---|---:|---|
-| [AutoGPT](https://github.com/Significant-Gravitas/AutoGPT) | Framework | 185k | Origin of the autonomous goal-driven agent loop |
-| [Dify](https://github.com/langgenius/dify) | Platform | 148k | Visual builder and runtime for agentic workflows |
-| [MetaGPT](https://github.com/geekan/MetaGPT) | Framework | 69k | Multi-agent software company with SOP-structured roles |
-| [AutoGen](https://github.com/microsoft/autogen) | Framework | 60k | Multi-agent conversation / group-chat orchestration |
-| [CrewAI](https://github.com/crewAIInc/crewAI) | Framework | 55k | Role-playing agents composed into collaborative crews |
-| [LangGraph](https://github.com/langchain-ai/langgraph) | Framework | 37k | Graph-based stateful orchestration of long-running agents |
-| [DSPy](https://github.com/stanfordnlp/dspy) | Framework | 36k | Programming (not prompting) LLMs as compositional modules |
-| [smolagents](https://github.com/huggingface/smolagents) | Framework | 28k | Code-action agents with sandboxed Python execution |
-| [OpenCode](https://github.com/sst/opencode) | Coding harness | 184k | Provider-agnostic terminal agent with plan and build modes |
-| [Claude Code](https://github.com/anthropics/claude-code) | Coding harness | 137k | Reference single-threaded agentic coding loop |
-| [Codex CLI](https://github.com/openai/codex) | Coding harness | 97k | Terminal coding agent (OpenAI) |
-| [OpenHands](https://github.com/All-Hands-AI/OpenHands) | Coding harness | 80k | Control center / agent–computer interface for coding |
-| [Cline](https://github.com/cline/cline) | Coding harness | 64k | Autonomous coding agent embedded in the editor |
-| [Goose](https://github.com/block/goose) | Coding harness | 51k | Extensible on-machine agent, MCP-native |
-| [Aider](https://github.com/Aider-AI/aider) | Coding harness | 47k | Terminal pair-programmer editing across a git repo |
-| [Continue](https://github.com/continuedev/continue) | Coding harness | 35k | Open IDE assistant and custom coding agents |
-| [SWE-agent](https://github.com/SWE-agent/SWE-agent) | Coding harness | 20k | Agent–computer interface resolving GitHub issues |
-| [12-Factor Agents](https://github.com/humanlayer/12-factor-agents) | Engineering canon | 24k | Twelve principles for production-grade agent applications |
-| [Claude Agent SDK](https://github.com/anthropics/claude-agent-sdk-python) | SDK / harness | 7.6k | Build agents on the Claude Code harness (tools, hooks, MCP) |
+| [ECC](https://github.com/affaan-m/ECC) | Harness layer | 236k | Skills, memory and security wrapped around an existing coding agent |
+| [hermes-agent](https://github.com/NousResearch/hermes-agent) | Framework | 223k | Long-running personal agent that accumulates state across sessions |
+| [n8n](https://github.com/n8n-io/n8n) | Platform | 199k | Visual workflow automation with agent steps inside the graph |
+| [opencode](https://github.com/anomalyco/opencode) | Coding harness | 191k | Provider-agnostic terminal agent with plan and build modes |
+| [AutoGPT](https://github.com/Significant-Gravitas/AutoGPT) | Framework | 186k | Origin of the autonomous goal-driven agent loop |
+| [langflow](https://github.com/langflow-ai/langflow) | Platform | 153k | Visual builder and deployment path for agents and workflows |
+| [dify](https://github.com/langgenius/dify) | Platform | 151k | Visual builder and runtime for agentic workflows |
+| [langchain](https://github.com/langchain-ai/langchain) | Framework | 143k | The chain-and-agent library most of the ecosystem grew out of |
+| [claude-code](https://github.com/anthropics/claude-code) | Coding harness | 140k | Reference single-threaded agentic coding loop |
+| [browser-use](https://github.com/browser-use/browser-use) | Framework | 107k | Turns live web pages into an agent action space |
+| [gemini-cli](https://github.com/google-gemini/gemini-cli) | Coding harness | 106k | Terminal coding agent (Google) |
+| [codex](https://github.com/openai/codex) | Coding harness | 103k | Terminal coding agent (OpenAI) |
+| [TradingAgents](https://github.com/TauricResearch/TradingAgents) | Domain framework | 95k | Multi-agent financial trading, the most adopted domain instance |
+| [OpenHands](https://github.com/OpenHands/OpenHands) | Coding harness | 83k | Control center and agent-computer interface for coding |
+| [pi](https://github.com/earendil-works/pi) | Framework | 81k | Agent toolkit bundling a unified LLM API, the loop, a TUI and a coding CLI |
+| [deer-flow](https://github.com/bytedance/deer-flow) | Coding harness | 78k | Long-horizon harness spanning research, code and produced artifacts |
+| [MetaGPT](https://github.com/FoundationAgents/MetaGPT) | Framework | 70k | Multi-agent software company with SOP-structured roles |
+| [openinterpreter](https://github.com/openinterpreter/openinterpreter) | Coding harness | 67k | Coding agent targeting open models |
+| [oh-my-openagent](https://github.com/code-yeongyu/oh-my-openagent) | Coding harness | 67k | Coding harness aimed at large codebases under tight token budgets |
+| [ruflo](https://github.com/ruvnet/ruflo) | Meta-harness | 67k | Coordinates swarms of agents across other harnesses |
+| [cline](https://github.com/cline/cline) | Coding harness | 65k | Autonomous coding agent embedded in the editor |
+| [autogen](https://github.com/microsoft/autogen) | Framework | 60k | Multi-agent conversation and group-chat orchestration |
+| [crewAI](https://github.com/crewAIInc/crewAI) | Framework | 56k | Role-playing agents composed into collaborative crews |
+| [goose](https://github.com/aaif-goose/goose) | Coding harness | 52k | Extensible on-machine agent, MCP-native |
+| [aider](https://github.com/Aider-AI/aider) | Coding harness | 48k | Terminal pair-programmer editing across a git repo |
+| [langgraph](https://github.com/langchain-ai/langgraph) | Framework | 39k | Graph-based stateful orchestration of long-running agents |
+| [dspy](https://github.com/stanfordnlp/dspy) | Framework | 36k | Programming (not prompting) LLMs as compositional modules |
+| [continue](https://github.com/continuedev/continue) | Coding harness | 35k | Open IDE assistant and custom coding agents |
+| [smolagents](https://github.com/huggingface/smolagents) | Framework | 29k | Code-action agents with sandboxed Python execution |
+| [12-factor-agents](https://github.com/humanlayer/12-factor-agents) | Engineering canon | 25k | Twelve principles for production-grade agent applications |
+| [SWE-agent](https://github.com/SWE-agent/SWE-agent) | Coding harness | 20k | Agent-computer interface resolving GitHub issues |
+| [claude-agent-sdk-python](https://github.com/anthropics/claude-agent-sdk-python) | SDK / harness | 7.8k | Build agents on the Claude Code harness (tools, hooks, MCP) |
+
+### Memory, context, and execution infrastructure
+
+The parts of a loop that are neither the model nor the harness: what the agent remembers, what reaches its context, and where its code runs.
+
+| Artifact | Category | Stars | Role |
+|---|---|---:|---|
+| [firecrawl](https://github.com/firecrawl/firecrawl) | Retrieval | 158k | Web search and scrape API shaped for agent consumption |
+| [graphify](https://github.com/Graphify-Labs/graphify) | Context | 99k | Codebase, docs and schemas as a deterministic queryable knowledge graph |
+| [claude-mem](https://github.com/thedotmack/claude-mem) | Memory | 89k | Persistent context carried across sessions, harness-agnostic |
+| [daytona](https://github.com/daytonaio/daytona) | Sandbox | 72k | Elastic isolated infrastructure for running agent-generated code |
+| [codegraph](https://github.com/colbymchenry/codegraph) | Context | 64k | Pre-indexed code knowledge graph that re-syncs as the code changes |
+| [headroom](https://github.com/headroomlabs-ai/headroom) | Context | 63k | Compresses tool output, logs and RAG chunks before they reach the model |
+| [mem0](https://github.com/mem0ai/mem0) | Memory | 62k | Universal memory layer for agents |
 
 ### Skill libraries, registries, and prompt corpora
 
 | Artifact | Category | Stars | Role |
 |---|---|---:|---|
-| [superpowers](https://github.com/obra/superpowers) | Skill methodology | 251k | Composable skills as an operating methodology for agents |
-| [awesome-chatgpt-prompts](https://github.com/f/awesome-chatgpt-prompts) | Prompt corpus | 165k | The canonical crowd-sourced prompt corpus |
-| [Anthropic Skills](https://github.com/anthropics/skills) | Skill standard | 160k | Reference SKILL.md skills (the skill primitive) |
-| [system-prompts](https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools) | Loop / prompt corpus | 142k | Extracted production system prompts and tool schemas |
-| [awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers) | Registry | 90k | The canonical registry of Model Context Protocol servers |
-| [MCP servers](https://github.com/modelcontextprotocol/servers) | Registry | 88k | Reference Model Context Protocol server implementations |
-| [wshobson/agents](https://github.com/wshobson/agents) | Marketplace | 38k | Cross-harness marketplace of agents and skills |
-| [awesome-claude-code-subagents](https://github.com/VoltAgent/awesome-claude-code-subagents) | List | 23k | 150+ specialized Claude Code subagents |
-| [microsoft/skills](https://github.com/microsoft/skills) | Skills / registry | 2.7k | Agent Skills, MCP servers, and AGENTS.md packages |
+| [superpowers](https://github.com/obra/superpowers) | Skill methodology | 264k | Composable skills as an operating methodology for agents |
+| [skills](https://github.com/mattpocock/skills) | Skill library | 197k | A working engineer's own skill directory, published as-is |
+| [prompts.chat](https://github.com/f/prompts.chat) | Prompt corpus | 167k | The canonical crowd-sourced prompt corpus |
+| [skills](https://github.com/anthropics/skills) | Skill standard | 165k | Reference SKILL.md skills (the skill primitive) |
+| [system-prompts-and-models-of-ai-tools](https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools) | Loop / prompt corpus | 142k | Extracted production system prompts and tool schemas |
+| [agency-agents](https://github.com/msitarzewski/agency-agents) | Agent library | 138k | A full agency of role-specialized agents |
+| [awesome-llm-apps](https://github.com/Shubhamsaboo/awesome-llm-apps) | List | 129k | Runnable agent, skill and RAG applications |
+| [awesome-design-md](https://github.com/VoltAgent/awesome-design-md) | Skill library | 106k | DESIGN.md files distilled from brand design systems, droppable into a harness |
+| [ponytail](https://github.com/DietrichGebert/ponytail) | Skill | 93k | Biases the agent toward writing less code |
+| [awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers) | Registry | 92k | The canonical registry of Model Context Protocol servers |
+| [servers](https://github.com/modelcontextprotocol/servers) | Registry | 89k | Reference Model Context Protocol server implementations |
+| [agent-skills](https://github.com/addyosmani/agent-skills) | Skill library | 81k | Production engineering skills for coding agents |
+| [Prompt-Engineering-Guide](https://github.com/dair-ai/Prompt-Engineering-Guide) | Engineering canon | 77k | The standing reference for prompt and context engineering |
+| [learn-claude-code](https://github.com/shareAI-lab/learn-claude-code) | Engineering canon | 73k | A minimal agent harness built from scratch, as a teaching artifact |
+| [awesome-claude-skills](https://github.com/ComposioHQ/awesome-claude-skills) | Registry | 71k | Curated registry of Claude Skills and supporting tools |
+| [ai-agents-for-beginners](https://github.com/microsoft/ai-agents-for-beginners) | Engineering canon | 71k | Eighteen-lesson course for building agents |
+| [taste-skill](https://github.com/Leonxlnx/taste-skill) | Skill | 69k | Targets the aesthetics of agent output rather than its correctness |
+| [system_prompts_leaks](https://github.com/asgeirtj/system_prompts_leaks) | Loop / prompt corpus | 62k | Extracted production system prompts |
+| [agents](https://github.com/wshobson/agents) | Marketplace | 38k | Cross-harness marketplace of agents and skills |
+| [awesome-claude-code-subagents](https://github.com/VoltAgent/awesome-claude-code-subagents) | List | 24k | Specialized Claude Code subagents |
+| [skills](https://github.com/microsoft/skills) | Skills / registry | 2.8k | Agent Skills, MCP servers, and AGENTS.md packages |
 
 <sub><a href="#contents">↑ Back to Contents</a></sub>
 
@@ -790,6 +829,7 @@ The full text is in this repository at [`paper/the-agent-loop-survey.pdf`](paper
 <a id="updates"></a>
 ## Updates
 
+- **2026-07-31**: Artifact catalog rebuilt against the GitHub API: +32 entries, 28 to 60, with a new table for memory, context and sandbox infrastructure. Every star count re-read, and four rows moved to owners that had renamed upstream (OpenCode, OpenHands, MetaGPT, prompts.chat).
 - **2026-07-31**: Recency pass: +31 papers from July 2026, three to five per section, each pulled from the arXiv API and re-checked against its record before it went in. 493 to 524.
 - **2026-07-30**: ClawBench added under Evaluation by [@reacher-z](https://github.com/reacher-z), who helps maintain it, and folded into the generator so it survives a rebuild. 492 to 493.
 - **2026-07-27**: Survey PDF posted in `paper/`, readable here while the preprint record is being set up.
