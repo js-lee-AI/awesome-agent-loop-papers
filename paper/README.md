@@ -5,7 +5,7 @@
 **The Agent Loop: A Survey of Control Strategies, Skills, and Harnesses for LLM Agents**
 Jungseob Lee (Korea University) and Chanjun Park (Soongsil University), 2026. 59 pages.
 
-It is posted here so the work is readable now, while the preprint record is being set up. When that record is live, this file stays and the citation in the main README points at the versioned record instead.
+The paper is published on SSRN at [10.2139/ssrn.7186738](https://ssrn.com/abstract=7186738). That record is the citable one; this copy is kept so the work stays readable without leaving the repository. Quote page numbers from the published record.
 
 ## Terms
 

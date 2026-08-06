@@ -8,6 +8,7 @@ how LLM agents are controlled, trained, skilled, harnessed, evaluated, and broke
 <p align="center">
 <img src="https://img.shields.io/badge/papers-524-0F4C5C?style=flat-square&labelColor=2b2b2b" alt="papers indexed">
 <img src="https://img.shields.io/badge/artifacts-60-0F4C5C?style=flat-square&labelColor=2b2b2b" alt="open-source artifacts catalogued">
+<a href="https://ssrn.com/abstract=7186738"><img src="https://img.shields.io/badge/DOI-10.2139%2Fssrn.7186738-0F4C5C?style=flat-square&labelColor=2b2b2b" alt="DOI: 10.2139/ssrn.7186738"></a>
 <a href="LICENSE"><img src="https://img.shields.io/badge/License-CC--BY--4.0-0F4C5C?style=flat-square&labelColor=2b2b2b" alt="License: CC BY 4.0"></a>
 <a href="CONTRIBUTING.md"><img src="https://img.shields.io/badge/PRs-welcome-0F4C5C?style=flat-square&labelColor=2b2b2b" alt="PRs welcome"></a>
 </p>
@@ -27,11 +28,11 @@ Curated, section-organized reading list and artifact catalog for the survey
 **_The Agent Loop: A Survey of Control Strategies, Skills, and Harnesses for LLM Agents_**
 (Jungseob Lee, Korea University; Chanjun Park, Soongsil University).
 
-📄 **Read the paper**: [paper/the-agent-loop-survey.pdf](paper/the-agent-loop-survey.pdf) (59 pages). Posted here while the preprint record is being set up.
+📄 **Read the paper**: [on SSRN](https://ssrn.com/abstract=7186738) (DOI `10.2139/ssrn.7186738`), or the same 59-page PDF [in this repository](paper/the-agent-loop-survey.pdf).
 
 > The survey treats the **agent loop**, not the model in isolation, as the unit of analysis: the loop *paradigms* that shape reasoning/action/search, the *trained* loops that absorb control into weights, the *mechanics* (termination, verification, context, recovery) that govern any loop, the *skills* that externalize competence into portable procedure, the *harnesses* that instantiate it, and the *evaluation* and *safety* problems it creates. This repo mirrors that structure.
 
-Currently indexing **524 papers** (365 cited in the survey text plus 159 additional curated 2026 papers, each verified against its arXiv record) across the survey's sections, plus **60 real-world open-source artifacts** (frameworks, coding harnesses, memory and sandbox infrastructure, skill libraries, and registries). The preprint is forthcoming; this list is maintained independently of it.
+Currently indexing **524 papers** (365 cited in the survey text plus 159 additional curated 2026 papers, each verified against its arXiv record) across the survey's sections, plus **60 real-world open-source artifacts** (frameworks, coding harnesses, memory and sandbox infrastructure, skill libraries, and registries). The survey itself is a fixed record; this list keeps moving after it, and is maintained independently.
 
 <a id="contents"></a>
 ## Contents
@@ -811,6 +812,8 @@ Thanks to everyone who has suggested, verified, or annotated a paper here:
 <a id="cite-this-survey"></a>
 ## Cite this survey
 
+The survey is posted on SSRN as **[The Agent Loop: A Survey of Control Strategies, Skills, and Harnesses for LLM Agents](https://ssrn.com/abstract=7186738)**, DOI `10.2139/ssrn.7186738`. That record is the one to cite. The same 59-page paper is also in this repository at [`paper/the-agent-loop-survey.pdf`](paper/the-agent-loop-survey.pdf) so you can read it without leaving GitHub.
+
 If this list or the survey is useful to you, please cite:
 
 ```bibtex
@@ -818,17 +821,22 @@ If this list or the survey is useful to you, please cite:
   title   = {The Agent Loop: A Survey of Control Strategies, Skills, and Harnesses for LLM Agents},
   author  = {Lee, Jungseob and Park, Chanjun},
   year    = {2026},
-  note    = {Preprint}
+  journal = {SSRN Electronic Journal},
+  doi     = {10.2139/ssrn.7186738},
+  url     = {https://ssrn.com/abstract=7186738}
 }
 ```
 
-The full text is in this repository at [`paper/the-agent-loop-survey.pdf`](paper/the-agent-loop-survey.pdf) until the preprint record is live.
+GitHub's **Cite this repository** button reads [`CITATION.cff`](CITATION.cff) and returns the same record in APA or BibTeX.
+
+The field-wide companion, *LLM Agents: A Survey*, is a separate record: DOI [`10.20944/preprints202608.0265.v1`](https://www.preprints.org/manuscript/202608.0265/v1). Cite whichever one you actually drew on.
 
 <sub><a href="#contents">↑ Back to Contents</a></sub>
 
 <a id="updates"></a>
 ## Updates
 
+- **2026-08-06**: The survey is posted on SSRN with DOI `10.2139/ssrn.7186738`. The cite block, `CITATION.cff` and the header link now point at that record instead of the PDF in this repository.
 - **2026-07-31**: Artifact catalog rebuilt against the GitHub API: +32 entries, 28 to 60, with a new table for memory, context and sandbox infrastructure. Every star count re-read, and four rows moved to owners that had renamed upstream (OpenCode, OpenHands, MetaGPT, prompts.chat).
 - **2026-07-31**: Recency pass: +31 papers from July 2026, three to five per section, each pulled from the arXiv API and re-checked against its record before it went in. 493 to 524.
 - **2026-07-30**: ClawBench added under Evaluation by [@reacher-z](https://github.com/reacher-z), who helps maintain it, and folded into the generator so it survives a rebuild. 492 to 493.

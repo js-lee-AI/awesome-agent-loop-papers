@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "If you use this list, please cite the accompanying survey."
+title: "Awesome Agent Loop Papers"
+abstract: "A curated, section-organized reading list and open-source artifact catalog on the agent loop: how LLM agents are controlled, trained, skilled, harnessed, evaluated, and broken. Companion to the survey 'The Agent Loop: A Survey of Control Strategies, Skills, and Harnesses for LLM Agents'."
+authors:
+  - family-names: "Lee"
+    given-names: "Jungseob"
+    affiliation: "Korea University, South Korea"
+    orcid: "https://orcid.org/0000-0002-9431-6342"
+  - family-names: "Park"
+    given-names: "Chanjun"
+    affiliation: "Soongsil University, South Korea"
+license: CC-BY-4.0
+repository-code: "https://github.com/js-lee-AI/awesome-agent-loop-papers"
+preferred-citation:
+  type: article
+  title: "The Agent Loop: A Survey of Control Strategies, Skills, and Harnesses for LLM Agents"
+  authors:
+    - family-names: "Lee"
+      given-names: "Jungseob"
+      affiliation: "Korea University, South Korea"
+      orcid: "https://orcid.org/0000-0002-9431-6342"
+    - family-names: "Park"
+      given-names: "Chanjun"
+      affiliation: "Soongsil University, South Korea"
+  journal: "SSRN Electronic Journal"
+  year: 2026
+  month: 7
+  doi: "10.2139/ssrn.7186738"
+  url: "https://ssrn.com/abstract=7186738"
