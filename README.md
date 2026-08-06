@@ -829,7 +829,7 @@ If this list or the survey is useful to you, please cite:
 
 GitHub's **Cite this repository** button reads [`CITATION.cff`](CITATION.cff) and returns the same record in APA or BibTeX.
 
-The field-wide companion, *LLM Agents: A Survey*, is a separate record: DOI [`10.20944/preprints202608.0265.v1`](https://www.preprints.org/manuscript/202608.0265/v1). Cite whichever one you actually drew on.
+The field-wide companion, *LLM Agents: A Survey*, is a separate record: DOI [`10.20944/preprints202608.0265.v1`](https://www.preprints.org/manuscript/202608.0265). Cite whichever one you actually drew on.
 
 <sub><a href="#contents">↑ Back to Contents</a></sub>
 
