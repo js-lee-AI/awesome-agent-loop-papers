@@ -681,6 +681,7 @@ The parts of a loop that are neither the model nor the harness: what the agent r
 - [The Hidden Footprint: Making Storage a First-Class Metric for LLM Agent Evaluation](https://arxiv.org/abs/2607.11149) — Yu et al. 2026 · Measures the bytes an agent run leaves on disk, finding 15.7x retention spread among equally accurate configurations.
 - [SkillTV-Bench: Benchmarking How Well Judges Perform on Skill-Augmented Agentic Execution](https://arxiv.org/abs/2608.05573) — Han et al. 2026 · 681 real agent trajectories from 50 tasks across eleven domains for judging skill-augmented executions, on the premise that a verifier needs the task-time skill to know what evidence to inspect and which failures are task-critical.
 - [OrchestraBench: Evaluating Multi-Agent Orchestration Failure Modes, Recovery, and Decomposition Quality](https://arxiv.org/abs/2608.05263) — Chen et al. 2026 · Injects failures into templated enterprise workflows to measure cascade radius and per-mode recovery; a keyword router scores 0% on adversarial cases with misleading surface flags where an intent-reasoning router matches the oracle.
+- [Ouroboros: A Self-Developing Frontier Coding Agent with Reviewed Core Evolution](https://arxiv.org/abs/2608.08311) — Razzhigaev et al. 2026 · Documents a coding-agent harness whose tools, prompts, context assembly, and core implementation improve through reviewed commits that become the runtime for later work.
 
 </details>
 
