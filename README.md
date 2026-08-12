@@ -1,12 +1,12 @@
 <h1 align="center">🔁 Awesome Agent Loop Papers</h1>
 
 <p align="center">
-<b>539 papers and 60 open-source artifacts on the agent loop</b>: the reading list for<br>
+<b>540 papers and 60 open-source artifacts on the agent loop</b>: the reading list for<br>
 how LLM agents are controlled, trained, skilled, harnessed, evaluated, and broken.
 </p>
 
 <p align="center">
-<img src="https://img.shields.io/badge/papers-539-0F4C5C?style=flat-square&labelColor=2b2b2b" alt="papers indexed">
+<img src="https://img.shields.io/badge/papers-540-0F4C5C?style=flat-square&labelColor=2b2b2b" alt="papers indexed">
 <img src="https://img.shields.io/badge/artifacts-60-0F4C5C?style=flat-square&labelColor=2b2b2b" alt="open-source artifacts catalogued">
 <a href="https://ssrn.com/abstract=7186738"><img src="https://img.shields.io/badge/DOI-10.2139%2Fssrn.7186738-0F4C5C?style=flat-square&labelColor=2b2b2b" alt="DOI: 10.2139/ssrn.7186738"></a>
 <a href="LICENSE"><img src="https://img.shields.io/badge/License-CC--BY--4.0-0F4C5C?style=flat-square&labelColor=2b2b2b" alt="License: CC BY 4.0"></a>
@@ -32,7 +32,7 @@ Curated, section-organized reading list and artifact catalog for the survey
 
 > The survey treats the **agent loop**, not the model in isolation, as the unit of analysis: the loop *paradigms* that shape reasoning/action/search, the *trained* loops that absorb control into weights, the *mechanics* (termination, verification, context, recovery) that govern any loop, the *skills* that externalize competence into portable procedure, the *harnesses* that instantiate it, and the *evaluation* and *safety* problems it creates. This repo mirrors that structure.
 
-Currently indexing **539 papers** (365 cited in the survey text plus 174 additional curated 2026 papers, each verified against its arXiv record) across the survey's sections, plus **60 real-world open-source artifacts** (frameworks, coding harnesses, memory and sandbox infrastructure, skill libraries, and registries). The survey itself is a fixed record; this list keeps moving after it, and is maintained independently.
+Currently indexing **540 papers** (365 cited in the survey text plus 175 additional curated 2026 papers, each verified against its arXiv record) across the survey's sections, plus **60 real-world open-source artifacts** (frameworks, coding harnesses, memory and sandbox infrastructure, skill libraries, and registries). The survey itself is a fixed record; this list keeps moving after it, and is maintained independently.
 
 <a id="contents"></a>
 ## Contents
@@ -43,7 +43,7 @@ Currently indexing **539 papers** (365 cited in the survey text plus 174 additio
 - [Loop Mechanics](#loop-mechanics) (78)
 - [Trained Loops](#trained-loops) (64)
 - [Skills](#skills) (73)
-- [Harnesses and Orchestration](#harnesses-and-orchestration) (88)
+- [Harnesses and Orchestration](#harnesses-and-orchestration) (89)
 - [Evaluation](#evaluation) (62)
 - [Safety of the Loop](#safety-of-the-loop) (86)
 - [Open Challenges and Future Directions](#open-challenges-and-future-directions) (6)
@@ -513,7 +513,7 @@ The parts of a loop that are neither the model nor the harness: what the agent r
 ## Harnesses and Orchestration
 
 <details>
-<summary><b>Show 88 papers</b></summary>
+<summary><b>Show 89 papers</b></summary>
 
 - [OpenHands: An Open Platform for AI Software Developers as Generalist Agents](https://arxiv.org/abs/2407.16741) — Wang et al. 2024
 - [AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation](https://arxiv.org/abs/2308.08155) — Wu et al. 2023
@@ -570,7 +570,7 @@ The parts of a loop that are neither the model nor the harness: what the agent r
 - [awesome-claude-code-subagents](https://github.com/VoltAgent/awesome-claude-code-subagents) — VoltAgent 2025
 - [microsoft/skills](https://github.com/microsoft/skills) — Microsoft 2025
 
-*Additional 2026 reading (34), curated alongside the survey (not yet cited in the paper text):*
+*Additional 2026 reading (35), curated alongside the survey (not yet cited in the paper text):*
 
 - [LEMON: Learning Executable Multi-Agent Orchestration via Counterfactual Reinforcement Learning](https://arxiv.org/abs/2605.14483) — Chen et al. 2026 · Counterfactual RL learns role/capacity/dependency assignment for multi-agent orchestration.
 - [AnovaX: A Local, Multi-Agent Voice Assistant with LLM Planning, Typed Executors, and Adaptive Recovery](https://arxiv.org/abs/2607.15367) — Sinha 2026 · Local multi-agent voice assistant combining LLM planning, typed executors, and adaptive recovery.
@@ -606,6 +606,7 @@ The parts of a loop that are neither the model nor the harness: what the agent r
 - [EvoHarness-RL: Learning Self-Evolving Runtime Harness for Long-Horizon LLM Agents](https://arxiv.org/abs/2608.05446) — Ning et al. 2026 · Learns the harness usage policy instead of hand-writing it, exposing Belief, Progress and Experience as policy-facing state the agent constructs and updates during run-time execution.
 - [EvolveNet: Collaborative Harness Evolution for Agent Self-Improvement](https://arxiv.org/abs/2608.04968) — Nie et al. 2026 · Broadcasts a shared harness to data-local deployments and extracts experience where it lives, on the argument that the streams most worth learning from are exactly the ones that cannot be pooled.
 - [AiFlow: Token-Native Reactive Orchestration with Bounded Backpressure for Streaming LLM Applications](https://arxiv.org/abs/2608.00558) — Zhang 2026 · Normalizes provider token deltas into typed events on a directed streaming graph, with per-node queue bounds, ordering, overflow and backpressure declared rather than left to callback code, and a formalized bounded-memory property.
+- [Ouroboros: A Self-Developing Frontier Coding Agent with Reviewed Core Evolution](https://arxiv.org/abs/2608.08311) — Razzhigaev et al. 2026 · A harness whose tools, prompts, context assembly and core implementation improve through reviewed commits that become the runtime for later work; 86.74% on Terminal-Bench 2.1 and 90.69% on OSWorld-Verified from frozen snapshots, with a separate 161-day deployment left evolving live.
 
 </details>
 
@@ -681,7 +682,6 @@ The parts of a loop that are neither the model nor the harness: what the agent r
 - [The Hidden Footprint: Making Storage a First-Class Metric for LLM Agent Evaluation](https://arxiv.org/abs/2607.11149) — Yu et al. 2026 · Measures the bytes an agent run leaves on disk, finding 15.7x retention spread among equally accurate configurations.
 - [SkillTV-Bench: Benchmarking How Well Judges Perform on Skill-Augmented Agentic Execution](https://arxiv.org/abs/2608.05573) — Han et al. 2026 · 681 real agent trajectories from 50 tasks across eleven domains for judging skill-augmented executions, on the premise that a verifier needs the task-time skill to know what evidence to inspect and which failures are task-critical.
 - [OrchestraBench: Evaluating Multi-Agent Orchestration Failure Modes, Recovery, and Decomposition Quality](https://arxiv.org/abs/2608.05263) — Chen et al. 2026 · Injects failures into templated enterprise workflows to measure cascade radius and per-mode recovery; a keyword router scores 0% on adversarial cases with misleading surface flags where an intent-reasoning router matches the oracle.
-- [Ouroboros: A Self-Developing Frontier Coding Agent with Reviewed Core Evolution](https://arxiv.org/abs/2608.08311) — Razzhigaev et al. 2026 · Documents a coding-agent harness whose tools, prompts, context assembly, and core implementation improve through reviewed commits that become the runtime for later work.
 
 </details>
 
@@ -818,6 +818,7 @@ Thanks to everyone who has suggested, verified, or annotated a paper here:
 
 | | Contributor | Contributed |
 |---|---|---|
+| <a href="https://github.com/razzant"><img src="https://github.com/razzant.png?size=48" width="48" height="48" alt="@razzant"></a> | **[@razzant](https://github.com/razzant)** | Ouroboros, a self-developing coding-agent harness, submitted by its maintainer, under Harnesses and Orchestration ([#3](https://github.com/js-lee-AI/awesome-agent-loop-papers/pull/3)) |
 | <a href="https://github.com/reacher-z"><img src="https://github.com/reacher-z.png?size=48" width="48" height="48" alt="@reacher-z"></a> | **[@reacher-z](https://github.com/reacher-z)** | ClawBench, a live-web browser-agent benchmark, under Evaluation ([#1](https://github.com/js-lee-AI/awesome-agent-loop-papers/pull/1)) |
 | <a href="https://github.com/js-lee-AI"><img src="https://github.com/js-lee-AI.png?size=48" width="48" height="48" alt="@js-lee-AI"></a> | **[@js-lee-AI](https://github.com/js-lee-AI)** | Maintainer |
 
@@ -852,6 +853,7 @@ The field-wide companion, *LLM Agents: A Survey*, is a separate record: DOI [`10
 <a id="updates"></a>
 ## Updates
 
+- **2026-08-12**: Ouroboros added under Harnesses and Orchestration by [@razzant](https://github.com/razzant), who maintains it. The pull request put it under Evaluation, which is where a harness paper stops being findable, so it moved on the way in. 539 to 540.
 - **2026-08-08**: Recency pass: +15 papers from August 2026, weighted to where the month's work actually landed. Skills and their failure modes dominate: skill contamination, poisoned promotion, malicious skill files, and a negative result on knowledge-graph skill retrieval. Every arXiv ID, title and author line pulled from the API and re-checked before it went in. 524 to 539.
 - **2026-08-06**: The survey is posted on SSRN with DOI `10.2139/ssrn.7186738`. The cite block, `CITATION.cff` and the header link now point at that record instead of the PDF in this repository.
 - **2026-07-31**: Artifact catalog rebuilt against the GitHub API: +32 entries, 28 to 60, with a new table for memory, context and sandbox infrastructure. Every star count re-read, and four rows moved to owners that had renamed upstream (OpenCode, OpenHands, MetaGPT, prompts.chat).
