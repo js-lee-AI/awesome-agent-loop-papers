@@ -1,12 +1,12 @@
 <h1 align="center">🔁 Awesome Agent Loop Papers</h1>
 
 <p align="center">
-<b>540 papers and 60 open-source artifacts on the agent loop</b>: the reading list for<br>
+<b>560 papers and 60 open-source artifacts on the agent loop</b>: the reading list for<br>
 how LLM agents are controlled, trained, skilled, harnessed, evaluated, and broken.
 </p>
 
 <p align="center">
-<img src="https://img.shields.io/badge/papers-540-0F4C5C?style=flat-square&labelColor=2b2b2b" alt="papers indexed">
+<img src="https://img.shields.io/badge/papers-560-0F4C5C?style=flat-square&labelColor=2b2b2b" alt="papers indexed">
 <img src="https://img.shields.io/badge/artifacts-60-0F4C5C?style=flat-square&labelColor=2b2b2b" alt="open-source artifacts catalogued">
 <a href="https://ssrn.com/abstract=7186738"><img src="https://img.shields.io/badge/DOI-10.2139%2Fssrn.7186738-0F4C5C?style=flat-square&labelColor=2b2b2b" alt="DOI: 10.2139/ssrn.7186738"></a>
 <a href="LICENSE"><img src="https://img.shields.io/badge/License-CC--BY--4.0-0F4C5C?style=flat-square&labelColor=2b2b2b" alt="License: CC BY 4.0"></a>
@@ -32,20 +32,20 @@ Curated, section-organized reading list and artifact catalog for the survey
 
 > The survey treats the **agent loop**, not the model in isolation, as the unit of analysis: the loop *paradigms* that shape reasoning/action/search, the *trained* loops that absorb control into weights, the *mechanics* (termination, verification, context, recovery) that govern any loop, the *skills* that externalize competence into portable procedure, the *harnesses* that instantiate it, and the *evaluation* and *safety* problems it creates. This repo mirrors that structure.
 
-Currently indexing **540 papers** (365 cited in the survey text plus 175 additional curated 2026 papers, each verified against its arXiv record) across the survey's sections, plus **60 real-world open-source artifacts** (frameworks, coding harnesses, memory and sandbox infrastructure, skill libraries, and registries). The survey itself is a fixed record; this list keeps moving after it, and is maintained independently.
+Currently indexing **560 papers** (385 cited in the survey text plus 175 additional curated 2026 papers, each verified against its arXiv record) across the survey's sections, plus **60 real-world open-source artifacts** (frameworks, coding harnesses, memory and sandbox infrastructure, skill libraries, and registries). The survey itself is a fixed record; this list keeps moving after it, and is maintained independently.
 
 <a id="contents"></a>
 ## Contents
 
 - [Introduction](#introduction) (30)
 - [Background and Definitions](#background-and-definitions) (19)
-- [Loop Paradigms](#loop-paradigms) (33)
-- [Loop Mechanics](#loop-mechanics) (78)
-- [Trained Loops](#trained-loops) (64)
-- [Skills](#skills) (73)
-- [Harnesses and Orchestration](#harnesses-and-orchestration) (89)
-- [Evaluation](#evaluation) (62)
-- [Safety of the Loop](#safety-of-the-loop) (86)
+- [Loop Paradigms](#loop-paradigms) (36)
+- [Loop Mechanics](#loop-mechanics) (81)
+- [Trained Loops](#trained-loops) (67)
+- [Skills](#skills) (76)
+- [Harnesses and Orchestration](#harnesses-and-orchestration) (92)
+- [Evaluation](#evaluation) (64)
+- [Safety of the Loop](#safety-of-the-loop) (89)
 - [Open Challenges and Future Directions](#open-challenges-and-future-directions) (6)
 - [Real-world artifacts](#real-world-artifacts)
 - [Contributing](#contributing)
@@ -213,7 +213,7 @@ The parts of a loop that are neither the model nor the harness: what the agent r
 ## Loop Paradigms
 
 <details>
-<summary><b>Show 33 papers</b></summary>
+<summary><b>Show 36 papers</b></summary>
 
 - [An LLM Compiler for Parallel Function Calling](https://arxiv.org/abs/2312.04511) — Kim et al. 2023
 - [AdaPlanner: Adaptive Planning from Feedback with Language Models](https://arxiv.org/abs/2305.16653) — Sun et al. 2023
@@ -231,9 +231,12 @@ The parts of a loop that are neither the model nor the harness: what the agent r
 - [ReflAct: World-Grounded Decision Making in LLM Agents via Goal-State Reflection](https://arxiv.org/abs/2505.15182) — Kim et al. 2025
 - [Tree Search for Language Model Agents](https://arxiv.org/abs/2407.01476) — Koh et al. 2024
 - [Agent Q: Advanced Reasoning and Learning for Autonomous AI Agents](https://arxiv.org/abs/2408.07199) — Putta et al. 2024
+- [The Optimizer Is the Agent: Reasoning-Driven Search across Prompts, Programs, and ML Workflows](https://arxiv.org/abs/2608.06714) — Li et al. 2026
 - [Tree of Thoughts: Deliberate Problem Solving with Large Language Models](https://arxiv.org/abs/2305.10601) — Yao et al. 2023
 - [Reasoning with Language Model is Planning with World Model](https://arxiv.org/abs/2305.14992) — Hao et al. 2023
 - [StateAct: Enhancing LLM Base Agents via Self-Prompting and State-Tracking](https://arxiv.org/abs/2410.02810) — Rozanov et al. 2024
+- [Second Thought: Reasoning in Parallel as LLM Agents Act and Observe](https://arxiv.org/abs/2608.13667) — Sun et al. 2026
+- [LLMs Can Predict Failure Risk, But Struggle to Predict Which Collaboration Protocol Pays Off: Cost-Aware Protocol Routing Across Reasoning Tasks](https://arxiv.org/abs/2608.14927) — Yang et al. 2026
 - [Web Agents Should Adopt the Plan-Then-Execute Paradigm](https://arxiv.org/abs/2605.14290) — Piet et al. 2026
 - [MAP: A Map-then-Act Paradigm for Long-Horizon Interactive Agent Reasoning](https://arxiv.org/abs/2605.13037) — Liu et al. 2026
 - [From Agent Loops to Structured Graphs: A Scheduler-Theoretic Framework for LLM Agent Execution](https://arxiv.org/abs/2604.11378) — Wei et al. 2026
@@ -259,11 +262,12 @@ The parts of a loop that are neither the model nor the harness: what the agent r
 ## Loop Mechanics
 
 <details>
-<summary><b>Show 78 papers</b></summary>
+<summary><b>Show 81 papers</b></summary>
 
 - [s1: Simple Test-Time Scaling](https://arxiv.org/abs/2501.19393) — Muennighoff et al. 2025
 - [Efficiently Scaling LLM Reasoning with Certaindex](https://arxiv.org/abs/2412.20993) — Fu et al. 2024
 - [Scaling LLM Test-Time Compute Optimally Can Be More Effective Than Scaling Model Parameters](https://arxiv.org/abs/2408.03314) — Snell et al. 2024
+- [R^3-Bench: LLMs Struggle with Resource-Rational Reasoning under Shared Budgets](https://arxiv.org/abs/2608.16033) — Wang et al. 2026
 - [Let's Verify Step by Step](https://arxiv.org/abs/2305.20050) — Lightman et al. 2023
 - [Generative Verifiers: Reward Modeling as Next-Token Prediction](https://arxiv.org/abs/2408.15240) — Zhang et al. 2024
 - [Code Generation with AlphaCodium: From Prompt Engineering to Flow Engineering](https://arxiv.org/abs/2401.08500) — Ridnik et al. 2024
@@ -276,8 +280,10 @@ The parts of a loop that are neither the model nor the harness: what the agent r
 - [LLMLingua: Compressing Prompts for Accelerated Inference of Large Language Models](https://arxiv.org/abs/2310.05736) — Jiang et al. 2023
 - [Effective context engineering for AI agents](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents) — Anthropic 2025
 - [How we built our multi-agent research system](https://www.anthropic.com/engineering/multi-agent-research-system) — Anthropic 2025
+- [What Does Context Compression Cost an Agent? Interaction Costs Unrevealed by Task-Completion Metrics](https://arxiv.org/abs/2608.16370) — Liu 2026
 - [SWE-bench: Can Language Models Resolve Real-World GitHub Issues?](https://arxiv.org/abs/2310.06770) — Jimenez et al. 2023
 - [Crab: A Semantics-Aware Checkpoint/Restore Runtime for Agent Sandboxes](https://arxiv.org/abs/2604.28138) — Wu et al. 2026
+- [AgentRewind: Recoverable Execution for Long-Horizon LLM Agents](https://arxiv.org/abs/2608.14380) — Zhuang et al. 2026
 - [Human-In-the-Loop Software Development Agents](https://arxiv.org/abs/2411.12924) — Takerngsaksiri et al. 2024
 - [Less Context, Better Agents: Efficient Context Engineering for Long-Horizon Tool-Using LLM Agents](https://arxiv.org/abs/2606.10209) — Lodha et al. 2026
 - [The Complexity Trap: Simple Observation Masking Is as Efficient as LLM Summarization for Agent Context Management](https://arxiv.org/abs/2508.21433) — Lindenbauer et al. 2025
@@ -350,7 +356,7 @@ The parts of a loop that are neither the model nor the harness: what the agent r
 ## Trained Loops
 
 <details>
-<summary><b>Show 64 papers</b></summary>
+<summary><b>Show 67 papers</b></summary>
 
 - [ToRL: Scaling Tool-Integrated RL](https://arxiv.org/abs/2503.23383) — Li et al. 2025
 - [DeepResearcher: Scaling Deep Research via Reinforcement Learning in Real-World Environments](https://arxiv.org/abs/2504.03160) — Zheng et al. 2025
@@ -365,7 +371,10 @@ The parts of a loop that are neither the model nor the harness: what the agent r
 - [Training Software Engineering Agents and Verifiers with SWE-Gym](https://arxiv.org/abs/2412.21139) — Pan et al. 2024
 - [ReST Meets ReAct: Self-Improvement for Multi-Step Reasoning LLM Agent](https://arxiv.org/abs/2312.10003) — Aksitov et al. 2023
 - [ReAct Meets ActRe: When Language Agents Enjoy Training Data Autonomy](https://arxiv.org/abs/2403.14589) — Yang et al. 2024
+- [One Frozen Simulator Is Not Enough: Simulator Collapse in Multi-Agent RL](https://arxiv.org/abs/2608.12253) — Yu et al. 2026
+- [Agent Lightning v1.0: Towards Harnessed Agentic RL](https://arxiv.org/abs/2608.17528) — He et al. 2026
 - [Chain-of-Agents: End-to-End Agent Foundation Models via Multi-Agent Distillation and Agentic RL](https://arxiv.org/abs/2508.13167) — Li et al. 2025
+- [Reason Wide, Not Deep: Amortizing the Reasoning Premium into Distilled Skills](https://arxiv.org/abs/2608.07885) — Singh et al. 2026
 - [Do NOT Think That Much for 2+3=? On the Overthinking of o1-Like LLMs](https://arxiv.org/abs/2412.21187) — Chen et al. 2024
 - [L1: Controlling How Long a Reasoning Model Thinks with Reinforcement Learning](https://arxiv.org/abs/2503.04697) — Aggarwal et al. 2025
 - [Agentic Knowledgeable Self-Awareness](https://arxiv.org/abs/2504.03553) — Qiao et al. 2025
@@ -427,7 +436,7 @@ The parts of a loop that are neither the model nor the harness: what the agent r
 ## Skills
 
 <details>
-<summary><b>Show 73 papers</b></summary>
+<summary><b>Show 76 papers</b></summary>
 
 - [Agent Workflow Memory](https://arxiv.org/abs/2409.07429) — Wang et al. 2024
 - [ToolLLM: Facilitating Large Language Models to Master 16000+ Real-world APIs](https://arxiv.org/abs/2307.16789) — Qin et al. 2023
@@ -449,6 +458,8 @@ The parts of a loop that are neither the model nor the harness: what the agent r
 - [Lifelong Robot Library Learning: Bootstrapping Composable and Generalizable Skills for Embodied Control with Language Models](https://arxiv.org/abs/2406.18746) — Tziafas et al. 2024
 - [JARVIS-1: Open-World Multi-Task Agents with Memory-Augmented Multimodal Language Models](https://arxiv.org/abs/2311.05997) — Wang et al. 2023
 - [Ghost in the Minecraft: Generally Capable Agents for Open-World Environments via Large Language Models with Text-Based Knowledge and Memory](https://arxiv.org/abs/2305.17144) — Zhu et al. 2023
+- [Demystifying Agent Skills: Why They Work-Until They Don't](https://arxiv.org/abs/2608.14036) — Jiang et al. 2026
+- [What Keeps Agent Skills from Being Reusable? Evidence from 138K SKILL.md Files](https://arxiv.org/abs/2608.08453) — Zhang et al. 2026
 - [A Measurement Study of Model Context Protocol Ecosystem](https://arxiv.org/abs/2509.25292) — Guo et al. 2025
 - [Systematization of Knowledge: Security and Safety in the Model Context Protocol Ecosystem](https://arxiv.org/abs/2512.08290) — Gaire et al. 2025
 - [Parasites in the Toolchain: A Large-Scale Analysis of Attacks on the MCP Ecosystem](https://arxiv.org/abs/2509.06572) — Zhao et al. 2025
@@ -456,6 +467,7 @@ The parts of a loop that are neither the model nor the harness: what the agent r
 - [Model Context Protocol (MCP): Landscape, Security Threats, and Future Research Directions](https://arxiv.org/abs/2503.23278) — Hou et al. 2025
 - [A Large-Scale Empirical Analysis of Custom GPTs' Vulnerabilities in the OpenAI Ecosystem](https://arxiv.org/abs/2505.08148) — Ogundoyin et al. 2025
 - [Model Context Protocol (MCP) at First Glance: Studying the Security and Maintainability of MCP Servers](https://arxiv.org/abs/2506.13538) — Hasan et al. 2025
+- [CompoSkill: Compositional Skill Chain Attacks from Individually Scanner-Passing LLM Agent Skills](https://arxiv.org/abs/2608.16246) — Liu et al. 2026
 - [MUSE-Autoskill: Self-Evolving Agents via Skill Creation, Memory, Management, and Evaluation](https://arxiv.org/abs/2605.27366) — Lin et al. 2026
 - [SkillCAT: Contrastive Assessment and Topology-Aware Skill Self-Evolution for LLM Agents](https://arxiv.org/abs/2606.13317) — Chen et al. 2026
 - [SkillOpt: Executive Strategy for Self-Evolving Agent Skills](https://arxiv.org/abs/2605.23904) — Yang et al. 2026
@@ -513,12 +525,15 @@ The parts of a loop that are neither the model nor the harness: what the agent r
 ## Harnesses and Orchestration
 
 <details>
-<summary><b>Show 89 papers</b></summary>
+<summary><b>Show 92 papers</b></summary>
 
+- [The Devil Is in the Interface: Evaluating How Tool Architecture Shapes Coding Agent Behavior](https://arxiv.org/abs/2608.11386) — Xu et al. 2026
 - [OpenHands: An Open Platform for AI Software Developers as Generalist Agents](https://arxiv.org/abs/2407.16741) — Wang et al. 2024
 - [AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation](https://arxiv.org/abs/2308.08155) — Wu et al. 2023
+- [The Scaffolding Matters More Than the Interface: A Controlled Comparison of MCP and CLI Tool Use Across Seven Agent Scaffoldings, Five Language Models, and One Software Task](https://arxiv.org/abs/2608.08654) — Forment et al. 2026
 - [Don't Build Multi-Agents](https://cognition.com/blog/dont-build-multi-agents) — Yan 2025
 - [Why Do Multi-Agent LLM Systems Fail?](https://arxiv.org/abs/2503.13657) — Cemri et al. 2025
+- [When Agents Coordinate: Measuring Coordination in Multi-Agent AI Coding](https://arxiv.org/abs/2608.16801) — Destefanis et al. 2026
 - [AOrchestra: Automating Sub-Agent Creation for Agentic Orchestration](https://arxiv.org/abs/2602.03786) — Ruan et al. 2026
 - [From Model Scaling to System Scaling: Scaling the Harness in Agentic AI](https://arxiv.org/abs/2605.26112) — Gu et al. 2026
 - [12-Factor Agents: Principles for Building Reliable LLM Applications](https://github.com/humanlayer/12-factor-agents) — Horthy 2025
@@ -615,7 +630,7 @@ The parts of a loop that are neither the model nor the harness: what the agent r
 ## Evaluation
 
 <details>
-<summary><b>Show 62 papers</b></summary>
+<summary><b>Show 64 papers</b></summary>
 
 - [WebArena: A Realistic Web Environment for Building Autonomous Agents](https://arxiv.org/abs/2307.13854) — Zhou et al. 2024
 - [OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments](https://arxiv.org/abs/2404.07972) — Xie et al. 2024
@@ -625,6 +640,8 @@ The parts of a loop that are neither the model nor the harness: what the agent r
 - [Establishing Best Practices for Building Rigorous Agentic Benchmarks](https://arxiv.org/abs/2507.02825) — Zhu et al. 2025
 - [Stop Comparing LLM Agents Without Disclosing the Harness](https://arxiv.org/abs/2605.23950) — Zhang et al. 2026
 - [The SWE-Bench Illusion: When State-of-the-Art LLMs Remember Instead of Reason](https://arxiv.org/abs/2506.12286) — Liang et al. 2025
+- [QuoteBench: How Matched Scores Can Hide Command-Path Failures](https://arxiv.org/abs/2608.13547) — Li et al. 2026
+- [Beyond Pass@k: Measuring Reliability and Security of Agentic Code Generation](https://arxiv.org/abs/2608.14711) — Jiang et al. 2026
 - [Stop Overthinking: A Survey on Efficient Reasoning for Large Language Models](https://arxiv.org/abs/2503.16419) — Sui et al. 2025
 - [Beyond pass@1: A Reliability Science Framework for Long-Horizon LLM Agents](https://arxiv.org/abs/2603.29231) — Khanal et al. 2026
 - [ReliabilityBench: Evaluating LLM Agent Reliability Under Production-Like Stress Conditions](https://arxiv.org/abs/2601.06112) — Gupta et al. 2026
@@ -690,7 +707,7 @@ The parts of a loop that are neither the model nor the harness: what the agent r
 ## Safety of the Loop
 
 <details>
-<summary><b>Show 86 papers</b></summary>
+<summary><b>Show 89 papers</b></summary>
 
 - [Not what you've signed up for: Compromising Real-World LLM-Integrated Applications with Indirect Prompt Injection](https://arxiv.org/abs/2302.12173) — Greshake et al. 2023
 - [InjecAgent: Benchmarking Indirect Prompt Injections in Tool-Integrated Large Language Model Agents](https://arxiv.org/abs/2403.02691) — Zhan et al. 2024
@@ -698,6 +715,7 @@ The parts of a loop that are neither the model nor the harness: what the agent r
 - [AgentHarm: A Benchmark for Measuring Harmfulness of LLM Agents](https://arxiv.org/abs/2410.09024) — Andriushchenko et al. 2024
 - [Agent Security Bench (ASB): Formalizing and Benchmarking Attacks and Defenses in LLM-based Agents](https://arxiv.org/abs/2410.02644) — Zhang et al. 2024
 - [Identifying the Risks of LM Agents with an LM-Emulated Sandbox](https://arxiv.org/abs/2309.15817) — Ruan et al. 2024
+- [StepJack: Benchmarking Computer-Use Agent Safety Against Multi-Step Indirect Prompt Injection](https://arxiv.org/abs/2608.06477) — Zhan et al. 2026
 - [The Instruction Hierarchy: Training LLMs to Prioritize Privileged Instructions](https://arxiv.org/abs/2404.13208) — Wallace et al. 2024
 - [StruQ: Defending Against Prompt Injection with Structured Queries](https://arxiv.org/abs/2402.06363) — Chen et al. 2024
 - [SecAlign: Defending Against Prompt Injection with Preference Optimization](https://arxiv.org/abs/2410.05451) — Chen et al. 2024
@@ -705,6 +723,8 @@ The parts of a loop that are neither the model nor the harness: what the agent r
 - [Defeating Prompt Injections by Design](https://arxiv.org/abs/2503.18813) — Debenedetti et al. 2025
 - [Progent: Securing AI Agents with Privilege Control](https://arxiv.org/abs/2504.11703) — Shi et al. 2025
 - [IsolateGPT: An Execution Isolation Architecture for LLM-Based Agentic Systems](https://arxiv.org/abs/2403.04960) — Wu et al. 2024
+- [Bounded Agents: Delegation Security for Multi-Agent AI Systems](https://arxiv.org/abs/2608.15888) — Muruaga 2026
+- [Convergent Detour Hijacking: Task-Preserving Resource Amplification in Skill-Based LLM Agents](https://arxiv.org/abs/2608.12273) — Liu et al. 2026
 - [GuardAgent: Safeguard LLM Agents by a Guard Agent via Knowledge-Enabled Reasoning](https://arxiv.org/abs/2406.09187) — Xiang et al. 2024
 - [ShieldAgent: Shielding Agents via Verifiable Safety Policy Reasoning](https://arxiv.org/abs/2503.22738) — Chen et al. 2025
 - [AgentSpec: Customizable Runtime Enforcement for Safe and Reliable LLM Agents](https://arxiv.org/abs/2503.18666) — Wang et al. 2025
@@ -853,6 +873,7 @@ The field-wide companion, *LLM Agents: A Survey*, is a separate record: DOI [`10
 <a id="updates"></a>
 ## Updates
 
+- **2026-08-20**: Recency pass: +20 papers from August 2026, three per section and two for Evaluation. These are cited in the survey text, not parked in the extras block: each attaches to a claim the section already makes and either sharpens it or qualifies it. Candidates came from the arXiv export API rather than a search engine, so none could be proposed without a resolvable ID, and every survivor was re-queried and matched on title, first author and year before insertion. The month's work is unusually rich in negatives: pass@k computed over unit tests instead of rollouts, a matched harness score hiding a 64-point command-path loss, per-skill scanners that miss the composition path, and a frozen simulator that teaches a policy to game it. 540 to 560.
 - **2026-08-12**: Ouroboros added under Harnesses and Orchestration by [@razzant](https://github.com/razzant), who maintains it. The pull request put it under Evaluation, which is where a harness paper stops being findable, so it moved on the way in. 539 to 540.
 - **2026-08-08**: Recency pass: +15 papers from August 2026, weighted to where the month's work actually landed. Skills and their failure modes dominate: skill contamination, poisoned promotion, malicious skill files, and a negative result on knowledge-graph skill retrieval. Every arXiv ID, title and author line pulled from the API and re-checked before it went in. 524 to 539.
 - **2026-08-06**: The survey is posted on SSRN with DOI `10.2139/ssrn.7186738`. The cite block, `CITATION.cff` and the header link now point at that record instead of the PDF in this repository.
