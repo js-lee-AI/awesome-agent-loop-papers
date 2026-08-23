@@ -57,7 +57,7 @@ Sections are collapsed by default. Click **Show N papers** to expand.
 
 ## Real-world artifacts
 
-Widely-used open-source artifacts that define current practice. Star counts and repository names read from the GitHub API on 2026-07-31. Many of the highest-starred (OpenCode, Claude Code, AutoGPT, Anthropic Skills, superpowers) have **no accompanying paper**, so the survey and this table are intended as their citable reference.
+Widely-used open-source artifacts that define current practice. Star counts and repository names checked 2026-07-31. Many of the highest-starred (OpenCode, Claude Code, AutoGPT, Anthropic Skills, superpowers) have **no accompanying paper**, so the survey and this table are intended as their citable reference.
 
 ### Frameworks and coding harnesses
 
@@ -873,12 +873,12 @@ The field-wide companion, *LLM Agents: A Survey*, is a separate record: DOI [`10
 <a id="updates"></a>
 ## Updates
 
-- **2026-08-20**: Recency pass: +20 papers from August 2026, three per section and two for Evaluation. These are cited in the survey text, not parked in the extras block: each attaches to a claim the section already makes and either sharpens it or qualifies it. Candidates came from the arXiv export API rather than a search engine, so none could be proposed without a resolvable ID, and every survivor was re-queried and matched on title, first author and year before insertion. The month's work is unusually rich in negatives: pass@k computed over unit tests instead of rollouts, a matched harness score hiding a 64-point command-path loss, per-skill scanners that miss the composition path, and a frozen simulator that teaches a policy to game it. 540 to 560.
+- **2026-08-20**: Recency pass: +20 papers from August 2026, three per section and two for Evaluation. These are cited in the survey text, not parked in the extras block: each attaches to a claim the section already makes and either sharpens it or qualifies it. The month's work is unusually rich in negatives: pass@k computed over unit tests instead of rollouts, a matched harness score hiding a 64-point command-path loss, per-skill scanners that miss the composition path, and a frozen simulator that teaches a policy to game it. 540 to 560.
 - **2026-08-12**: Ouroboros added under Harnesses and Orchestration by [@razzant](https://github.com/razzant), who maintains it. The pull request put it under Evaluation, which is where a harness paper stops being findable, so it moved on the way in. 539 to 540.
-- **2026-08-08**: Recency pass: +15 papers from August 2026, weighted to where the month's work actually landed. Skills and their failure modes dominate: skill contamination, poisoned promotion, malicious skill files, and a negative result on knowledge-graph skill retrieval. Every arXiv ID, title and author line pulled from the API and re-checked before it went in. 524 to 539.
+- **2026-08-08**: Recency pass: +15 papers from August 2026, weighted to where the month's work actually landed. Skills and their failure modes dominate: skill contamination, poisoned promotion, malicious skill files, and a negative result on knowledge-graph skill retrieval. 524 to 539.
 - **2026-08-06**: The survey is posted on SSRN with DOI `10.2139/ssrn.7186738`. The cite block, `CITATION.cff` and the header link now point at that record instead of the PDF in this repository.
-- **2026-07-31**: Artifact catalog rebuilt against the GitHub API: +32 entries, 28 to 60, with a new table for memory, context and sandbox infrastructure. Every star count re-read, and four rows moved to owners that had renamed upstream (OpenCode, OpenHands, MetaGPT, prompts.chat).
-- **2026-07-31**: Recency pass: +31 papers from July 2026, three to five per section, each pulled from the arXiv API and re-checked against its record before it went in. 493 to 524.
+- **2026-07-31**: Artifact catalog rebuilt: +32 entries, 28 to 60, with a new table for memory, context and sandbox infrastructure. Every star count refreshed, and four rows moved to owners that had renamed upstream (OpenCode, OpenHands, MetaGPT, prompts.chat).
+- **2026-07-31**: Recency pass: +31 papers from July 2026, three to five per section. 493 to 524.
 - **2026-07-30**: ClawBench added under Evaluation by [@reacher-z](https://github.com/reacher-z), who helps maintain it, and folded into the generator so it survives a rebuild. 492 to 493.
 - **2026-07-27**: Survey PDF posted in `paper/`, readable here while the preprint record is being set up.
 - **2026-07-25**: README brought up to the sibling list's standard, and two generator bugs fixed: a math macro was mangling τ-bench, and corporate author names were being truncated to their last word.
