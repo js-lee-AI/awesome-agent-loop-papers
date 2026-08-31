@@ -517,6 +517,7 @@ The parts of a loop that are neither the model nor the harness: what the agent r
 - [Comparative Approaches to Agent Retrieval over Large Skill Libraries](https://arxiv.org/abs/2608.06196) — Kolluru et al. 2026 · Over a corpus of 690 skills a hybrid lexical and dense ranker puts the right one in the top five 73.5% of the time, and the typed workflow knowledge graph, used as its design intends at matched token budget, comes out significantly worse by 11.2 points.
 - [When Self-Evolution Backfires: Pre-Commit Gating against Skill Contamination in LLM Agents](https://arxiv.org/abs/2608.05810) — Shang et al. 2026 · Past a critical pool size new skills start hurting rather than helping, because a defective skill becomes reference material for the next one; removing the source afterwards recovers little, which makes admission a pre-commit problem rather than a cleanup problem.
 - [Rethinking Self-Evolving Agent Skills: Feedback Dynamics over Multiple Rounds](https://arxiv.org/abs/2608.02636) — Liu et al. 2026 · Holds executor, optimizer, revision procedure and round budget fixed across 42 runs and varies only the feedback shown to the optimizer, finding evolution is sparse: 55 of 388 candidates ever establish a byte-distinct validation best.
+- [Corpus2Skill: Distilling Enterprise Knowledge into Navigable Agent Skills for QA and RAG](https://arxiv.org/abs/2604.14572) — Sun et al. 2026
 
 </details>
 
