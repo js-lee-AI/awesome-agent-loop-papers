@@ -1,12 +1,12 @@
 <h1 align="center">🔁 Awesome Agent Loop Papers</h1>
 
 <p align="center">
-<b>560 papers and 70 open-source artifacts on the agent loop</b>: the reading list for<br>
+<b>561 papers and 70 open-source artifacts on the agent loop</b>: the reading list for<br>
 how LLM agents are controlled, trained, skilled, harnessed, evaluated, and broken.
 </p>
 
 <p align="center">
-<img src="https://img.shields.io/badge/papers-560-0F4C5C?style=flat-square&labelColor=2b2b2b" alt="papers indexed">
+<img src="https://img.shields.io/badge/papers-561-0F4C5C?style=flat-square&labelColor=2b2b2b" alt="papers indexed">
 <img src="https://img.shields.io/badge/artifacts-70-0F4C5C?style=flat-square&labelColor=2b2b2b" alt="open-source artifacts catalogued">
 <a href="https://ssrn.com/abstract=7186738"><img src="https://img.shields.io/badge/DOI-10.2139%2Fssrn.7186738-0F4C5C?style=flat-square&labelColor=2b2b2b" alt="DOI: 10.2139/ssrn.7186738"></a>
 <a href="LICENSE"><img src="https://img.shields.io/badge/License-CC--BY--4.0-0F4C5C?style=flat-square&labelColor=2b2b2b" alt="License: CC BY 4.0"></a>
@@ -32,7 +32,7 @@ Curated, section-organized reading list and artifact catalog for the survey
 
 > The survey treats the **agent loop**, not the model in isolation, as the unit of analysis: the loop *paradigms* that shape reasoning/action/search, the *trained* loops that absorb control into weights, the *mechanics* (termination, verification, context, recovery) that govern any loop, the *skills* that externalize competence into portable procedure, the *harnesses* that instantiate it, and the *evaluation* and *safety* problems it creates. This repo mirrors that structure.
 
-Currently indexing **560 papers** (385 cited in the survey text plus 175 additional curated 2026 papers, each verified against its arXiv record) across the survey's sections, plus **70 real-world open-source artifacts** (frameworks, coding harnesses, memory, context, sandbox, ingestion, tool-server and observability infrastructure, skill libraries, and registries). The survey itself is a fixed record; this list keeps moving after it, and is maintained independently.
+Currently indexing **561 papers** (385 cited in the survey text plus 176 additional curated 2026 papers, each verified against its arXiv record) across the survey's sections, plus **70 real-world open-source artifacts** (frameworks, coding harnesses, memory, context, sandbox, ingestion, tool-server and observability infrastructure, skill libraries, and registries). The survey itself is a fixed record; this list keeps moving after it, and is maintained independently.
 
 <a id="contents"></a>
 ## Contents
@@ -42,7 +42,7 @@ Currently indexing **560 papers** (385 cited in the survey text plus 175 additio
 - [Loop Paradigms](#loop-paradigms) (36)
 - [Loop Mechanics](#loop-mechanics) (81)
 - [Trained Loops](#trained-loops) (67)
-- [Skills](#skills) (76)
+- [Skills](#skills) (77)
 - [Harnesses and Orchestration](#harnesses-and-orchestration) (92)
 - [Evaluation](#evaluation) (64)
 - [Safety of the Loop](#safety-of-the-loop) (89)
@@ -446,7 +446,7 @@ The parts of a loop that are neither the model nor the harness: what the agent r
 ## Skills
 
 <details>
-<summary><b>Show 76 papers</b></summary>
+<summary><b>Show 77 papers</b></summary>
 
 - [Agent Workflow Memory](https://arxiv.org/abs/2409.07429) — Wang et al. 2024
 - [ToolLLM: Facilitating Large Language Models to Master 16000+ Real-world APIs](https://arxiv.org/abs/2307.16789) — Qin et al. 2023
@@ -505,7 +505,7 @@ The parts of a loop that are neither the model nor the harness: what the agent r
 - [SkillAdaptor: Self-Adapting Skills for LLM Agents from Trajectories](https://arxiv.org/abs/2606.01311) — Yu et al. 2026
 - [GEIS: A Generation-Evaluation-Improvement Loop of Agent Skills for Long-Form Article Generation](https://arxiv.org/abs/2607.11503) — Zhang et al. 2026
 
-*Additional 2026 reading (20), curated alongside the survey (not yet cited in the paper text):*
+*Additional 2026 reading (21), curated alongside the survey (not yet cited in the paper text):*
 
 - [COMFYCLAW: Self-Evolving Skill Harnesses for Image Generation Workflows](https://arxiv.org/abs/2607.01709) — Li et al. 2026 · Self-evolving reusable skill harness that recalls workflow patterns and constraints across sessions.
 - [SciVisAgentSkills: Design and Evaluation of Agent Skills for Scientific Data Analysis and Visualization](https://arxiv.org/abs/2606.05525) — Ai et al. 2026 · Designs and evaluates externalized reusable agent skills for scientific visualization workflows.
@@ -527,7 +527,7 @@ The parts of a loop that are neither the model nor the harness: what the agent r
 - [Comparative Approaches to Agent Retrieval over Large Skill Libraries](https://arxiv.org/abs/2608.06196) — Kolluru et al. 2026 · Over a corpus of 690 skills a hybrid lexical and dense ranker puts the right one in the top five 73.5% of the time, and the typed workflow knowledge graph, used as its design intends at matched token budget, comes out significantly worse by 11.2 points.
 - [When Self-Evolution Backfires: Pre-Commit Gating against Skill Contamination in LLM Agents](https://arxiv.org/abs/2608.05810) — Shang et al. 2026 · Past a critical pool size new skills start hurting rather than helping, because a defective skill becomes reference material for the next one; removing the source afterwards recovers little, which makes admission a pre-commit problem rather than a cleanup problem.
 - [Rethinking Self-Evolving Agent Skills: Feedback Dynamics over Multiple Rounds](https://arxiv.org/abs/2608.02636) — Liu et al. 2026 · Holds executor, optimizer, revision procedure and round budget fixed across 42 runs and varies only the feedback shown to the optimizer, finding evolution is sparse: 55 of 388 candidates ever establish a byte-distinct validation best.
-- [Corpus2Skill: Distilling Enterprise Knowledge into Navigable Agent Skills for QA and RAG](https://arxiv.org/abs/2604.14572) — Sun et al. 2026
+- [Corpus2Skill: Distilling Enterprise Knowledge into Navigable Agent Skills for QA and RAG](https://arxiv.org/abs/2604.14572) — Sun et al. 2026 · Induces the skill hierarchy from a document corpus rather than from trajectories: an offline compiler turns the corpus into a navigable skill directory that the agent drills into at serve time, backing out of branches that go nowhere. Across eleven datasets it is not a universal replacement for retrieval, winning on five, tying on three and losing on three, with the gains confined to single-domain corpora whose topical taxonomy can be recovered.
 
 </details>
 
@@ -849,6 +849,7 @@ Thanks to everyone who has suggested, verified, or annotated a paper here:
 
 | | Contributor | Contributed |
 |---|---|---|
+| <a href="https://github.com/dukesun99"><img src="https://github.com/dukesun99.png?size=48" width="48" height="48" alt="@dukesun99"></a> | **[@dukesun99](https://github.com/dukesun99)** | Corpus2Skill, which induces agent skills from a document corpus rather than from trajectories, submitted by one of its authors, under Skills ([#4](https://github.com/js-lee-AI/awesome-agent-loop-papers/pull/4)) |
 | <a href="https://github.com/razzant"><img src="https://github.com/razzant.png?size=48" width="48" height="48" alt="@razzant"></a> | **[@razzant](https://github.com/razzant)** | Ouroboros, a self-developing coding-agent harness, submitted by its maintainer, under Harnesses and Orchestration ([#3](https://github.com/js-lee-AI/awesome-agent-loop-papers/pull/3)) |
 | <a href="https://github.com/reacher-z"><img src="https://github.com/reacher-z.png?size=48" width="48" height="48" alt="@reacher-z"></a> | **[@reacher-z](https://github.com/reacher-z)** | ClawBench, a live-web browser-agent benchmark, under Evaluation ([#1](https://github.com/js-lee-AI/awesome-agent-loop-papers/pull/1)) |
 | <a href="https://github.com/js-lee-AI"><img src="https://github.com/js-lee-AI.png?size=48" width="48" height="48" alt="@js-lee-AI"></a> | **[@js-lee-AI](https://github.com/js-lee-AI)** | Maintainer |
@@ -884,6 +885,7 @@ The field-wide companion, *LLM Agents: A Survey*, is a separate record: DOI [`10
 <a id="updates"></a>
 ## Updates
 
+- **2026-09-07**: Corpus2Skill added under Skills by [@dukesun99](https://github.com/dukesun99), one of its authors. The pull request edited this README, which a rebuild would have thrown away, so it moved into the generator and picked up the annotation the rest of the section carries. 560 to 561.
 - **2026-09-07**: Artifact catalog: +10 entries, 60 to 70, with every star count refreshed. The additions fill gaps rather than adding more harnesses: nothing in the table covered observability, document ingestion, MCP servers or spec-driven development, and infrastructure was the thinnest of the three tables. Seven of the ten land there.
 - **2026-08-20**: Recency pass: +20 papers from August 2026, three per section and two for Evaluation. These are cited in the survey text, not parked in the extras block: each attaches to a claim the section already makes and either sharpens it or qualifies it. The month's work is unusually rich in negatives: pass@k computed over unit tests instead of rollouts, a matched harness score hiding a 64-point command-path loss, per-skill scanners that miss the composition path, and a frozen simulator that teaches a policy to game it. 540 to 560.
 - **2026-08-12**: Ouroboros added under Harnesses and Orchestration by [@razzant](https://github.com/razzant), who maintains it. The pull request put it under Evaluation, which is where a harness paper stops being findable, so it moved on the way in. 539 to 540.
