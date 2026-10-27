@@ -1,12 +1,12 @@
 <h1 align="center">🔁 Awesome Agent Loop Papers</h1>
 
 <p align="center">
-<b>562 papers and 100 open-source artifacts on the agent loop</b>: the reading list for<br>
+<b>564 papers and 100 open-source artifacts on the agent loop</b>: the reading list for<br>
 how LLM agents are controlled, trained, skilled, harnessed, evaluated, and broken.
 </p>
 
 <p align="center">
-<img src="https://img.shields.io/badge/papers-562-0F4C5C?style=flat-square&labelColor=2b2b2b" alt="papers indexed">
+<img src="https://img.shields.io/badge/papers-564-0F4C5C?style=flat-square&labelColor=2b2b2b" alt="papers indexed">
 <img src="https://img.shields.io/badge/artifacts-100-0F4C5C?style=flat-square&labelColor=2b2b2b" alt="open-source artifacts catalogued">
 <a href="https://ssrn.com/abstract=7186738"><img src="https://img.shields.io/badge/DOI-10.2139%2Fssrn.7186738-0F4C5C?style=flat-square&labelColor=2b2b2b" alt="DOI: 10.2139/ssrn.7186738"></a>
 <a href="LICENSE"><img src="https://img.shields.io/badge/License-CC--BY--4.0-0F4C5C?style=flat-square&labelColor=2b2b2b" alt="License: CC BY 4.0"></a>
@@ -32,7 +32,7 @@ Curated, section-organized reading list and artifact catalog for the survey
 
 > The survey treats the **agent loop**, not the model in isolation, as the unit of analysis: the loop *paradigms* that shape reasoning/action/search, the *trained* loops that absorb control into weights, the *mechanics* (termination, verification, context, recovery) that govern any loop, the *skills* that externalize competence into portable procedure, the *harnesses* that instantiate it, and the *evaluation* and *safety* problems it creates. This repo mirrors that structure.
 
-Currently indexing **562 papers** (385 cited in the survey text plus 177 additional curated 2026 papers, each verified against its arXiv record) across the survey's sections, plus **100 real-world open-source artifacts** (frameworks, coding harnesses, memory, context, sandbox, ingestion, tool-server and observability infrastructure, skill libraries and registries, and training and evaluation tools). The survey itself is a fixed record; this list keeps moving after it, and is maintained independently.
+Currently indexing **564 papers** (385 cited in the survey text plus 179 additional curated 2026 papers, each verified against its arXiv record) across the survey's sections, plus **100 real-world open-source artifacts** (frameworks, coding harnesses, memory, context, sandbox, ingestion, tool-server and observability infrastructure, skill libraries and registries, and training and evaluation tools). The survey itself is a fixed record; this list keeps moving after it, and is maintained independently.
 
 <a id="contents"></a>
 ## Contents
@@ -43,8 +43,8 @@ Currently indexing **562 papers** (385 cited in the survey text plus 177 additio
 - [Loop Mechanics](#loop-mechanics) (81)
 - [Trained Loops](#trained-loops) (67)
 - [Skills](#skills) (77)
-- [Harnesses and Orchestration](#harnesses-and-orchestration) (93)
-- [Evaluation](#evaluation) (64)
+- [Harnesses and Orchestration](#harnesses-and-orchestration) (94)
+- [Evaluation](#evaluation) (65)
 - [Safety of the Loop](#safety-of-the-loop) (89)
 - [Open Challenges and Future Directions](#open-challenges-and-future-directions) (6)
 - [Real-world artifacts](#real-world-artifacts)
@@ -573,7 +573,7 @@ Libraries that train the model inside an agent loop, and the harnesses and bench
 ## Harnesses and Orchestration
 
 <details>
-<summary><b>Show 93 papers</b></summary>
+<summary><b>Show 94 papers</b></summary>
 
 - [The Devil Is in the Interface: Evaluating How Tool Architecture Shapes Coding Agent Behavior](https://arxiv.org/abs/2608.11386) — Xu et al. 2026
 - [OpenHands: An Open Platform for AI Software Developers as Generalist Agents](https://arxiv.org/abs/2407.16741) — Wang et al. 2024
@@ -633,7 +633,7 @@ Libraries that train the model inside an agent loop, and the harnesses and bench
 - [awesome-claude-code-subagents](https://github.com/VoltAgent/awesome-claude-code-subagents) — VoltAgent 2025
 - [microsoft/skills](https://github.com/microsoft/skills) — Microsoft 2025
 
-*Additional 2026 reading (36), curated alongside the survey (not yet cited in the paper text):*
+*Additional 2026 reading (37), curated alongside the survey (not yet cited in the paper text):*
 
 - [LEMON: Learning Executable Multi-Agent Orchestration via Counterfactual Reinforcement Learning](https://arxiv.org/abs/2605.14483) — Chen et al. 2026 · Counterfactual RL learns role/capacity/dependency assignment for multi-agent orchestration.
 - [AnovaX: A Local, Multi-Agent Voice Assistant with LLM Planning, Typed Executors, and Adaptive Recovery](https://arxiv.org/abs/2607.15367) — Sinha 2026 · Local multi-agent voice assistant combining LLM planning, typed executors, and adaptive recovery.
@@ -671,7 +671,7 @@ Libraries that train the model inside an agent loop, and the harnesses and bench
 - [AiFlow: Token-Native Reactive Orchestration with Bounded Backpressure for Streaming LLM Applications](https://arxiv.org/abs/2608.00558) — Zhang 2026 · Normalizes provider token deltas into typed events on a directed streaming graph, with per-node queue bounds, ordering, overflow and backpressure declared rather than left to callback code, and a formalized bounded-memory property.
 - [Ouroboros: A Self-Developing Frontier Coding Agent with Reviewed Core Evolution](https://arxiv.org/abs/2608.08311) — Razzhigaev et al. 2026 · A harness whose tools, prompts, context assembly and core implementation improve through reviewed commits that become the runtime for later work; 86.74% on Terminal-Bench 2.1 and 90.69% on OSWorld-Verified from frozen snapshots, with a separate 161-day deployment left evolving live.
 - [Training Agents to Evolve with Their Harness: TaoLive Digital Avatar Agent Technical Report](https://arxiv.org/abs/2608.15763) — TaoLive AIGC LLM Team 2026 · Takes the harness as the thing that keeps moving and trains the model for that, perturbing skill identifiers and content, tool schemas, prompt structure and hook functions throughout supervised finetuning, on-policy distillation and reinforcement learning, so a compact model never learns one configuration. Harness-variant questions go from 75.4 to 94.6, and where fixed-harness supervised finetuning drops instruction following 7.7 points below the base model the augmented recipe gives none of it back, at P50 and P95 latencies of 3.4 and 8.1 seconds on one H20 in Taobao Live's digital-avatar service.
-- [Agon: An Autonomous Large-Scale Omnidisciplinary Research System Built on Prompt Economy](https://arxiv.org/abs/2606.24177) — Sun et al. 2026 · Treats prompt engineering as an engineering discipline: 18 roles and 230.6 KiB of prompts run research loops in 10+ fields without modification, and the longest run went 30 days unattended.
+- [Agon: An Autonomous Large-Scale Omnidisciplinary Research System Built on Prompt Economy](https://arxiv.org/abs/2606.24177) — Sun et al. 2026 · Runs each research stage, from idea and proposal to experiment and paper, as a producer and critic loop with 18 roles and 230.6 KiB of prompts, against 78 to about 110 roles and 302.4 to 1,297.5 KiB in AI Scientist v2, ARIS and AutoResearchClaw. It reports 444 loop iterations across more than ten fields with no hand-written experimental code, but no systematic evaluation of the research it produced; the main result is a taxonomy of the failures the loop cannot see or fix, by severity, fixability, visibility and capability, worked through a robotics and a biology case study.
 
 </details>
 
@@ -680,7 +680,7 @@ Libraries that train the model inside an agent loop, and the harnesses and bench
 ## Evaluation
 
 <details>
-<summary><b>Show 64 papers</b></summary>
+<summary><b>Show 65 papers</b></summary>
 
 - [WebArena: A Realistic Web Environment for Building Autonomous Agents](https://arxiv.org/abs/2307.13854) — Zhou et al. 2024
 - [OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments](https://arxiv.org/abs/2404.07972) — Xie et al. 2024
@@ -723,7 +723,7 @@ Libraries that train the model inside an agent loop, and the harnesses and bench
 - [AgentLens: Production-Assessed Trajectory Reviews for Coding Agent Evaluation](https://arxiv.org/abs/2607.06624) — Podivilov et al. 2026
 - [PACE: A Proxy for Agentic Capability Evaluation](https://arxiv.org/abs/2607.02032) — Song et al. 2026
 
-*Additional 2026 reading (24), curated alongside the survey (not yet cited in the paper text):*
+*Additional 2026 reading (25), curated alongside the survey (not yet cited in the paper text):*
 
 - [Claw-SWE-Bench: A Benchmark for Evaluating OpenClaw-style Agent Harnesses on Coding Tasks](https://arxiv.org/abs/2606.12344) — Zheng et al. 2026 · Benchmark adapting SWE-bench scoring contract to general-purpose OpenClaw-style agent harnesses.
 - [PerspectiveGap: A Benchmark for Multi-Agent Orchestration Prompting](https://arxiv.org/abs/2606.08878) — Sun et al. 2026 · Benchmark measuring LLMs' ability to compose orchestration prompts distributing knowledge across sub-agents.
@@ -749,7 +749,7 @@ Libraries that train the model inside an agent loop, and the harnesses and bench
 - [The Hidden Footprint: Making Storage a First-Class Metric for LLM Agent Evaluation](https://arxiv.org/abs/2607.11149) — Yu et al. 2026 · Measures the bytes an agent run leaves on disk, finding 15.7x retention spread among equally accurate configurations.
 - [SkillTV-Bench: Benchmarking How Well Judges Perform on Skill-Augmented Agentic Execution](https://arxiv.org/abs/2608.05573) — Han et al. 2026 · 681 real agent trajectories from 50 tasks across eleven domains for judging skill-augmented executions, on the premise that a verifier needs the task-time skill to know what evidence to inspect and which failures are task-critical.
 - [OrchestraBench: Evaluating Multi-Agent Orchestration Failure Modes, Recovery, and Decomposition Quality](https://arxiv.org/abs/2608.05263) — Chen et al. 2026 · Injects failures into templated enterprise workflows to measure cascade radius and per-mode recovery; a keyword router scores 0% on adversarial cases with misleading surface flags where an intent-reasoning router matches the oracle.
-- [SciΠvot: Benchmarking Principal-Investigator Judgment at Pivotal Moments of Scientific AutoResearch Agents](https://arxiv.org/abs/2610.21082) — Sun et al. 2026 · 248 cases built from real human corrections of research agents on 26 projects in six fields; four of five frontier models score below chance, and the best reaches 63.5% against 73.4% for fresh researchers.
+- [SciΠvot: Benchmarking Principal-Investigator Judgment at Pivotal Moments of Scientific AutoResearch Agents](https://arxiv.org/abs/2610.21082) — Sun et al. 2026 · 248 two-way choices built from senior researchers' corrections of LLM agents over six months on 26 projects in six fields: given the project record from before the correction, four of five frontier models prefer the agent's original plan at medium effort, the best setting reaches 63.5% against 73.4% for 13 PhD students and postdocs new to the projects, and every model does worse with the record than with the two plans alone. The cases were kept because the same five models split on them, so the scores locate failures rather than measure how often they happen.
 
 </details>
 
@@ -889,6 +889,7 @@ Thanks to everyone who has suggested, verified, or annotated a paper here:
 
 | | Contributor | Contributed |
 |---|---|---|
+| <a href="https://github.com/WhymustIhaveaname"><img src="https://github.com/WhymustIhaveaname.png?size=48" width="48" height="48" alt="@WhymustIhaveaname"></a> | **[@WhymustIhaveaname](https://github.com/WhymustIhaveaname)** | Agon, a research orchestrator built from producer and critic loops, under Harnesses and Orchestration, and SciΠvot, a benchmark of research decisions built from senior researchers' corrections, under Evaluation, both submitted by their first author ([#5](https://github.com/js-lee-AI/awesome-agent-loop-papers/pull/5)) |
 | <a href="https://github.com/sunyuhan19981208"><img src="https://github.com/sunyuhan19981208.png?size=48" width="48" height="48" alt="@sunyuhan19981208"></a> | **[@sunyuhan19981208](https://github.com/sunyuhan19981208)** | The TaoLive report on training a compact model to keep working as its harness changes, under Harnesses and Orchestration. Submitted by one of its authors to the sibling list ([#15](https://github.com/js-lee-AI/awesome-llm-agent-papers/pull/15)) and carried over here, where it fits better |
 | <a href="https://github.com/dukesun99"><img src="https://github.com/dukesun99.png?size=48" width="48" height="48" alt="@dukesun99"></a> | **[@dukesun99](https://github.com/dukesun99)** | Corpus2Skill, which induces agent skills from a document corpus rather than from trajectories, submitted by one of its authors, under Skills ([#4](https://github.com/js-lee-AI/awesome-agent-loop-papers/pull/4)) |
 | <a href="https://github.com/razzant"><img src="https://github.com/razzant.png?size=48" width="48" height="48" alt="@razzant"></a> | **[@razzant](https://github.com/razzant)** | Ouroboros, a self-developing coding-agent harness, submitted by its maintainer, under Harnesses and Orchestration ([#3](https://github.com/js-lee-AI/awesome-agent-loop-papers/pull/3)) |
@@ -926,6 +927,7 @@ The field-wide companion, *LLM Agents: A Survey*, is a separate record: DOI [`10
 <a id="updates"></a>
 ## Updates
 
+- **2026-10-28**: Agon added under Harnesses and Orchestration and SciΠvot under Evaluation by [@WhymustIhaveaname](https://github.com/WhymustIhaveaname), their first author. The pull request edited this README, which is generated, so both moved into the generator with annotations. On SciΠvot the best frontier model picks the senior researcher's correction over the agent's own plan 63.5% of the time, against 73.4% for researchers new to the projects. 562 to 564.
 - **2026-10-14**: Artifact catalog: +30 entries, 70 to 100, with every star count refreshed. A fourth table covers training and evaluation, which the catalog had left out; it holds verl, Agent Lightning and ART for training, and Harbor and SWE-bench for evaluation. Thirteen of the other twenty-five were created this year, DeepSeek Harness among them, and OpenClaw is now the most-starred entry. Daytona stays in the table, with a note that its repository was archived in June when development moved to a private codebase.
 - **2026-09-16**: The TaoLive harness-aware training report added under Harnesses and Orchestration. It arrived as a pull request on the sibling list, where it sits under Applications, but the transferable part belongs here: training a compact model against a harness that keeps being edited, rather than against one fixed configuration. 561 to 562.
 - **2026-09-07**: Corpus2Skill added under Skills by [@dukesun99](https://github.com/dukesun99), one of its authors. The pull request edited this README, which a rebuild would have thrown away, so it moved into the generator and picked up the annotation the rest of the section carries. 560 to 561.
