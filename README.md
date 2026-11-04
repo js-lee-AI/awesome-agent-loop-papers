@@ -1,12 +1,12 @@
 <h1 align="center">🔁 Awesome Agent Loop Papers</h1>
 
 <p align="center">
-<b>564 papers and 100 open-source artifacts on the agent loop</b>: the reading list for<br>
+<b>565 papers and 100 open-source artifacts on the agent loop</b>: the reading list for<br>
 how LLM agents are controlled, trained, skilled, harnessed, evaluated, and broken.
 </p>
 
 <p align="center">
-<img src="https://img.shields.io/badge/papers-564-0F4C5C?style=flat-square&labelColor=2b2b2b" alt="papers indexed">
+<img src="https://img.shields.io/badge/papers-565-0F4C5C?style=flat-square&labelColor=2b2b2b" alt="papers indexed">
 <img src="https://img.shields.io/badge/artifacts-100-0F4C5C?style=flat-square&labelColor=2b2b2b" alt="open-source artifacts catalogued">
 <a href="https://ssrn.com/abstract=7186738"><img src="https://img.shields.io/badge/DOI-10.2139%2Fssrn.7186738-0F4C5C?style=flat-square&labelColor=2b2b2b" alt="DOI: 10.2139/ssrn.7186738"></a>
 <a href="LICENSE"><img src="https://img.shields.io/badge/License-CC--BY--4.0-0F4C5C?style=flat-square&labelColor=2b2b2b" alt="License: CC BY 4.0"></a>
@@ -32,7 +32,7 @@ Curated, section-organized reading list and artifact catalog for the survey
 
 > The survey treats the **agent loop**, not the model in isolation, as the unit of analysis: the loop *paradigms* that shape reasoning/action/search, the *trained* loops that absorb control into weights, the *mechanics* (termination, verification, context, recovery) that govern any loop, the *skills* that externalize competence into portable procedure, the *harnesses* that instantiate it, and the *evaluation* and *safety* problems it creates. This repo mirrors that structure.
 
-Currently indexing **564 papers** (385 cited in the survey text plus 179 additional curated 2026 papers, each verified against its arXiv record) across the survey's sections, plus **100 real-world open-source artifacts** (frameworks, coding harnesses, memory, context, sandbox, ingestion, tool-server and observability infrastructure, skill libraries and registries, and training and evaluation tools). The survey itself is a fixed record; this list keeps moving after it, and is maintained independently.
+Currently indexing **565 papers** (385 cited in the survey text plus 180 additional curated 2026 papers, each verified against its arXiv record) across the survey's sections, plus **100 real-world open-source artifacts** (frameworks, coding harnesses, memory, context, sandbox, ingestion, tool-server and observability infrastructure, skill libraries and registries, and training and evaluation tools). The survey itself is a fixed record; this list keeps moving after it, and is maintained independently.
 
 <a id="contents"></a>
 ## Contents
@@ -41,7 +41,7 @@ Currently indexing **564 papers** (385 cited in the survey text plus 179 additio
 - [Background and Definitions](#background-and-definitions) (19)
 - [Loop Paradigms](#loop-paradigms) (36)
 - [Loop Mechanics](#loop-mechanics) (81)
-- [Trained Loops](#trained-loops) (67)
+- [Trained Loops](#trained-loops) (68)
 - [Skills](#skills) (77)
 - [Harnesses and Orchestration](#harnesses-and-orchestration) (94)
 - [Evaluation](#evaluation) (65)
@@ -403,7 +403,7 @@ Libraries that train the model inside an agent loop, and the harnesses and bench
 ## Trained Loops
 
 <details>
-<summary><b>Show 67 papers</b></summary>
+<summary><b>Show 68 papers</b></summary>
 
 - [ToRL: Scaling Tool-Integrated RL](https://arxiv.org/abs/2503.23383) — Li et al. 2025
 - [DeepResearcher: Scaling Deep Research via Reinforcement Learning in Real-World Environments](https://arxiv.org/abs/2504.03160) — Zheng et al. 2025
@@ -475,6 +475,7 @@ Libraries that train the model inside an agent loop, and the harnesses and bench
 - [Speculate While You Reason: Teaching Agents to Predict Their Next Tool Call via Joint Agent-Speculator RL](https://arxiv.org/abs/2607.25816) — Ji et al. 2026 · Trains one model both to act and to predict its own next tool call, replacing separate draft models with a dual-mode policy.
 - [Agentic-DPO: From Imitation to Agentic Policy Optimization on Expert Trajectories](https://arxiv.org/abs/2607.10601) — Chen et al. 2026 · Converts expert trajectories into state-level action preferences, matching online GRPO on tau-bench without online rollouts or a reward model.
 - [TCPO: Turn-Level Credit Policy Optimization](https://arxiv.org/abs/2608.01667) — Liao et al. 2026 · Separates a verifier score from credit in multi-turn RL: a score rates the current output, while credit should say how the turn changed the refinement trajectory, built from retrospective, hindsight and counterfactual comparisons.
+- [Teaching LLMs to Learn Tool Trialing and Execution through Environment Interaction](https://arxiv.org/abs/2601.12762) — Gao et al. 2026 · ToolMaster trains a trial-then-execute tool loop into the weights: SFT on teacher trajectories with explicit tool trials and self-correction, then GRPO to coordinate trialing and execution through environment interaction, for robustness on unseen tools.
 
 </details>
 
