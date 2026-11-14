@@ -395,6 +395,8 @@ Libraries that train the model inside an agent loop, and the harnesses and bench
 - [Addressable Recall Compaction for Long Context-Window Control in AI Agents](https://arxiv.org/abs/2607.25066) — Dang et al. 2026 · Replaces old tool observations with addressable citations the agent can re-request, avoiding both discarding and similarity-based retrieval.
 - [Reason Less, Verify More: Deterministic Gates Recover a Silent Policy-Violation Failure Mode in Tool-Using LLM Agents](https://arxiv.org/abs/2607.07405) — Reddy et al. 2026 · Catches silent policy-violating writes with deterministic pre-execution gates, since neither the tool nor the agent's self-report exposes them.
 - [TRAJDEBUG: Tracing Error Lifecycle to Identify Critical Failures in Long-Horizon Agent Trajectories](https://arxiv.org/abs/2608.06346) — Qi et al. 2026 · Locates the earliest step actually responsible for a failure rather than any local error, using multi-granularity history compression to keep evidence scattered across a long trajectory reachable.
+- [AgonAlpha: Autonomous Alpha Discovery via Prompt Economy and Scalable Agentic Search](https://arxiv.org/abs/2608.11250) — Ye et al. 2026 · Alpha-mining loop in which a fresh-context adversarial reviewer re-executes each candidate factor and can veto it, while pending-aware allocation splits the evaluation budget across parallel workers.
+- [AutoSR: Automatic Symbolic Regression by Searching Research States](https://arxiv.org/abs/2608.16876) — Zhang et al. 2026 · Proposer and reviewer agents grow research states under progressive-widening MCTS, so each candidate equation keeps its probes, failed attempts, and independent review; recovers three cp3-bench problems that no published system solves.
 
 </details>
 
