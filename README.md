@@ -1,12 +1,12 @@
 <h1 align="center">🔁 Awesome Agent Loop Papers</h1>
 
 <p align="center">
-<b>568 papers and 100 open-source artifacts on the agent loop</b>: the reading list for<br>
+<b>569 papers and 100 open-source artifacts on the agent loop</b>: the reading list for<br>
 how LLM agents are controlled, trained, skilled, harnessed, evaluated, and broken.
 </p>
 
 <p align="center">
-<img src="https://img.shields.io/badge/papers-568-0F4C5C?style=flat-square&labelColor=2b2b2b" alt="papers indexed">
+<img src="https://img.shields.io/badge/papers-569-0F4C5C?style=flat-square&labelColor=2b2b2b" alt="papers indexed">
 <img src="https://img.shields.io/badge/artifacts-100-0F4C5C?style=flat-square&labelColor=2b2b2b" alt="open-source artifacts catalogued">
 <a href="https://ssrn.com/abstract=7186738"><img src="https://img.shields.io/badge/DOI-10.2139%2Fssrn.7186738-0F4C5C?style=flat-square&labelColor=2b2b2b" alt="DOI: 10.2139/ssrn.7186738"></a>
 <a href="LICENSE"><img src="https://img.shields.io/badge/License-CC--BY--4.0-0F4C5C?style=flat-square&labelColor=2b2b2b" alt="License: CC BY 4.0"></a>
@@ -32,7 +32,7 @@ Curated, section-organized reading list and artifact catalog for the survey
 
 > The survey treats the **agent loop**, not the model in isolation, as the unit of analysis: the loop *paradigms* that shape reasoning/action/search, the *trained* loops that absorb control into weights, the *mechanics* (termination, verification, context, recovery) that govern any loop, the *skills* that externalize competence into portable procedure, the *harnesses* that instantiate it, and the *evaluation* and *safety* problems it creates. This repo mirrors that structure.
 
-Currently indexing **568 papers** (385 cited in the survey text plus 183 additional curated 2026 papers, each verified against its arXiv record) across the survey's sections, plus **100 real-world open-source artifacts** (frameworks, coding harnesses, memory, context, sandbox, ingestion, tool-server and observability infrastructure, skill libraries and registries, and training and evaluation tools). The survey itself is a fixed record; this list keeps moving after it, and is maintained independently.
+Currently indexing **569 papers** (385 cited in the survey text plus 184 additional curated 2026 papers, each verified against its arXiv or DOI record) across the survey's sections, plus **100 real-world open-source artifacts** (frameworks, coding harnesses, memory, context, sandbox, ingestion, tool-server and observability infrastructure, skill libraries and registries, and training and evaluation tools). The survey itself is a fixed record; this list keeps moving after it, and is maintained independently.
 
 <a id="contents"></a>
 ## Contents
@@ -43,7 +43,7 @@ Currently indexing **568 papers** (385 cited in the survey text plus 183 additio
 - [Loop Mechanics](#loop-mechanics) (83)
 - [Trained Loops](#trained-loops) (69)
 - [Skills](#skills) (77)
-- [Harnesses and Orchestration](#harnesses-and-orchestration) (94)
+- [Harnesses and Orchestration](#harnesses-and-orchestration) (95)
 - [Evaluation](#evaluation) (65)
 - [Safety of the Loop](#safety-of-the-loop) (89)
 - [Open Challenges and Future Directions](#open-challenges-and-future-directions) (6)
@@ -577,7 +577,7 @@ Libraries that train the model inside an agent loop, and the harnesses and bench
 ## Harnesses and Orchestration
 
 <details>
-<summary><b>Show 94 papers</b></summary>
+<summary><b>Show 95 papers</b></summary>
 
 - [The Devil Is in the Interface: Evaluating How Tool Architecture Shapes Coding Agent Behavior](https://arxiv.org/abs/2608.11386) — Xu et al. 2026
 - [OpenHands: An Open Platform for AI Software Developers as Generalist Agents](https://arxiv.org/abs/2407.16741) — Wang et al. 2024
@@ -637,7 +637,7 @@ Libraries that train the model inside an agent loop, and the harnesses and bench
 - [awesome-claude-code-subagents](https://github.com/VoltAgent/awesome-claude-code-subagents) — VoltAgent 2025
 - [microsoft/skills](https://github.com/microsoft/skills) — Microsoft 2025
 
-*Additional 2026 reading (37), curated alongside the survey (not yet cited in the paper text):*
+*Additional 2026 reading (38), curated alongside the survey (not yet cited in the paper text):*
 
 - [LEMON: Learning Executable Multi-Agent Orchestration via Counterfactual Reinforcement Learning](https://arxiv.org/abs/2605.14483) — Chen et al. 2026 · Counterfactual RL learns role/capacity/dependency assignment for multi-agent orchestration.
 - [AnovaX: A Local, Multi-Agent Voice Assistant with LLM Planning, Typed Executors, and Adaptive Recovery](https://arxiv.org/abs/2607.15367) — Sinha 2026 · Local multi-agent voice assistant combining LLM planning, typed executors, and adaptive recovery.
@@ -676,7 +676,7 @@ Libraries that train the model inside an agent loop, and the harnesses and bench
 - [Ouroboros: A Self-Developing Frontier Coding Agent with Reviewed Core Evolution](https://arxiv.org/abs/2608.08311) — Razzhigaev et al. 2026 · A harness whose tools, prompts, context assembly and core implementation improve through reviewed commits that become the runtime for later work; 86.74% on Terminal-Bench 2.1 and 90.69% on OSWorld-Verified from frozen snapshots, with a separate 161-day deployment left evolving live.
 - [Training Agents to Evolve with Their Harness: TaoLive Digital Avatar Agent Technical Report](https://arxiv.org/abs/2608.15763) — TaoLive AIGC LLM Team 2026 · Takes the harness as the thing that keeps moving and trains the model for that, perturbing skill identifiers and content, tool schemas, prompt structure and hook functions throughout supervised finetuning, on-policy distillation and reinforcement learning, so a compact model never learns one configuration. Harness-variant questions go from 75.4 to 94.6, and where fixed-harness supervised finetuning drops instruction following 7.7 points below the base model the augmented recipe gives none of it back, at P50 and P95 latencies of 3.4 and 8.1 seconds on one H20 in Taobao Live's digital-avatar service.
 - [Agon: An Autonomous Large-Scale Omnidisciplinary Research System Built on Prompt Economy](https://arxiv.org/abs/2606.24177) — Sun et al. 2026 · Runs each research stage, from idea and proposal to experiment and paper, as a producer and critic loop with 18 roles and 230.6 KiB of prompts, against 78 to about 110 roles and 302.4 to 1,297.5 KiB in AI Scientist v2, ARIS and AutoResearchClaw. It reports 444 loop iterations across more than ten fields with no hand-written experimental code, but no systematic evaluation of the research it produced; the main result is a taxonomy of the failures the loop cannot see or fix, by severity, fixability, visibility and capability, worked through a robotics and a biology case study.
-- [Harness Engineering for Language Agents: The Harness Layer as Control, Agency, and Runtime](https://doi.org/10.20944/preprints202603.1756.v2) — He et al. 2026 · Decomposes the harness layer into control, agency and runtime (CAR), audits 63 harness-relevant works for a visibility gap between papers and engineering notes, and proposes HarnessCard for reporting the harness alongside the model.
+- [Harness Engineering for Language Agents: The Harness Layer as Control, Agency, and Runtime](https://doi.org/10.20944/preprints202603.1756.v2) — He et al. 2026 · Position paper that splits the layer around the model into control (instructions, repository maps, tests, permissions), agency (the tools, interfaces and roles the model acts through) and runtime (memory, checkpoints, retries, budgets), and proposes HarnessCard for reporting an agent's harness next to its model. In its audit of 63 works, papers and benchmarks most often foreground observability, interfaces and feedback, while engineering notes, protocols and articles foreground runtime, control and governance. The authors call the audit a visibility check over a selected set with interpretive tags, and no experiment separates model effects from harness effects.
 
 </details>
 
@@ -894,6 +894,7 @@ Thanks to everyone who has suggested, verified, or annotated a paper here:
 
 | | Contributor | Contributed |
 |---|---|---|
+| <a href="https://github.com/ChaoYue0307"><img src="https://github.com/ChaoYue0307.png?size=48" width="48" height="48" alt="@ChaoYue0307"></a> | **[@ChaoYue0307](https://github.com/ChaoYue0307)** | Harness Engineering for Language Agents, which splits the harness layer into control, agency and runtime, submitted by its first author, under Harnesses and Orchestration ([#9](https://github.com/js-lee-AI/awesome-agent-loop-papers/pull/9)) |
 | <a href="https://github.com/sunyuhan19981208"><img src="https://github.com/sunyuhan19981208.png?size=48" width="48" height="48" alt="@sunyuhan19981208"></a> | **[@sunyuhan19981208](https://github.com/sunyuhan19981208)** | MultiAgent-OPD, which trains the Searchers of a Leader-Searcher-Answerer team from a frozen teacher and the other two roles from the final answer, submitted by its first author, under Trained Loops ([#8](https://github.com/js-lee-AI/awesome-agent-loop-papers/pull/8)); the TaoLive report on training a compact model to keep working as its harness changes, under Harnesses and Orchestration. Submitted by one of its authors to the sibling list ([#15](https://github.com/js-lee-AI/awesome-llm-agent-papers/pull/15)) and carried over here, where it fits better |
 | <a href="https://github.com/WhymustIhaveaname"><img src="https://github.com/WhymustIhaveaname.png?size=48" width="48" height="48" alt="@WhymustIhaveaname"></a> | **[@WhymustIhaveaname](https://github.com/WhymustIhaveaname)** | AgonAlpha, alpha mining whose reviewer reruns each candidate and can veto it, and AutoSR, symbolic regression run as a search over research states, under Loop Mechanics, both submitted by one of their co-first authors ([#7](https://github.com/js-lee-AI/awesome-agent-loop-papers/pull/7)); Agon, a research orchestrator built from producer and critic loops, under Harnesses and Orchestration, and SciΠvot, a benchmark of research decisions built from senior researchers' corrections, under Evaluation, both submitted by their first author ([#5](https://github.com/js-lee-AI/awesome-agent-loop-papers/pull/5)) |
 | <a href="https://github.com/passionate11"><img src="https://github.com/passionate11.png?size=48" width="48" height="48" alt="@passionate11"></a> | **[@passionate11](https://github.com/passionate11)** | ToolMaster, which trains a model to try tools out before relying on them, submitted by one of its two first authors, under Trained Loops ([#6](https://github.com/js-lee-AI/awesome-agent-loop-papers/pull/6)) |
@@ -933,6 +934,7 @@ The field-wide companion, *LLM Agents: A Survey*, is a separate record: DOI [`10
 <a id="updates"></a>
 ## Updates
 
+- **2026-11-28**: Harness Engineering for Language Agents added under Harnesses and Orchestration by [@ChaoYue0307](https://github.com/ChaoYue0307), its first author. The pull request edited this README, which is generated, so it moved into the generator with an annotation. Its audit of 63 works finds papers and benchmarks mostly describing observability, interfaces and feedback, and engineering notes mostly describing runtime, control and governance. 568 to 569.
 - **2026-11-28**: MultiAgent-OPD added under Trained Loops by [@sunyuhan19981208](https://github.com/sunyuhan19981208), its first author. The pull request edited this README, which is generated, so it moved into the generator with an annotation. Searchers that learn from a frozen teacher bring the team to 38.68% exact match on seven QA sets, while Searchers trained on the final-answer reward stop searching and fall to 17.78%. 567 to 568.
 - **2026-11-28**: AgonAlpha and AutoSR added under Loop Mechanics by [@WhymustIhaveaname](https://github.com/WhymustIhaveaname), a co-first author of both. The pull request edited this README, which is generated, so both moved into the generator with annotations. In AgonAlpha a reviewer in a fresh context reruns each candidate and zeroed 2 of the 24 reports it audited; AutoSR keeps every probe and failed attempt in its search states and recovers three cp3-bench problems that none of 12 published systems solved. 565 to 567.
 - **2026-11-05**: ToolMaster added under Trained Loops by [@passionate11](https://github.com/passionate11), one of its two first authors. The pull request edited this README, which is generated, so it moved into the generator with an annotation. Trained to try tools before relying on them, Qwen2.5-7B goes from 43.4 to 66.4 on StableToolBench, against 60.2 for GPT-4o without training. 564 to 565.
