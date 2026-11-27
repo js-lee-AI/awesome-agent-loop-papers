@@ -1,12 +1,12 @@
 <h1 align="center">🔁 Awesome Agent Loop Papers</h1>
 
 <p align="center">
-<b>567 papers and 100 open-source artifacts on the agent loop</b>: the reading list for<br>
+<b>568 papers and 100 open-source artifacts on the agent loop</b>: the reading list for<br>
 how LLM agents are controlled, trained, skilled, harnessed, evaluated, and broken.
 </p>
 
 <p align="center">
-<img src="https://img.shields.io/badge/papers-567-0F4C5C?style=flat-square&labelColor=2b2b2b" alt="papers indexed">
+<img src="https://img.shields.io/badge/papers-568-0F4C5C?style=flat-square&labelColor=2b2b2b" alt="papers indexed">
 <img src="https://img.shields.io/badge/artifacts-100-0F4C5C?style=flat-square&labelColor=2b2b2b" alt="open-source artifacts catalogued">
 <a href="https://ssrn.com/abstract=7186738"><img src="https://img.shields.io/badge/DOI-10.2139%2Fssrn.7186738-0F4C5C?style=flat-square&labelColor=2b2b2b" alt="DOI: 10.2139/ssrn.7186738"></a>
 <a href="LICENSE"><img src="https://img.shields.io/badge/License-CC--BY--4.0-0F4C5C?style=flat-square&labelColor=2b2b2b" alt="License: CC BY 4.0"></a>
@@ -32,7 +32,7 @@ Curated, section-organized reading list and artifact catalog for the survey
 
 > The survey treats the **agent loop**, not the model in isolation, as the unit of analysis: the loop *paradigms* that shape reasoning/action/search, the *trained* loops that absorb control into weights, the *mechanics* (termination, verification, context, recovery) that govern any loop, the *skills* that externalize competence into portable procedure, the *harnesses* that instantiate it, and the *evaluation* and *safety* problems it creates. This repo mirrors that structure.
 
-Currently indexing **567 papers** (385 cited in the survey text plus 182 additional curated 2026 papers, each verified against its arXiv record) across the survey's sections, plus **100 real-world open-source artifacts** (frameworks, coding harnesses, memory, context, sandbox, ingestion, tool-server and observability infrastructure, skill libraries and registries, and training and evaluation tools). The survey itself is a fixed record; this list keeps moving after it, and is maintained independently.
+Currently indexing **568 papers** (385 cited in the survey text plus 183 additional curated 2026 papers, each verified against its arXiv record) across the survey's sections, plus **100 real-world open-source artifacts** (frameworks, coding harnesses, memory, context, sandbox, ingestion, tool-server and observability infrastructure, skill libraries and registries, and training and evaluation tools). The survey itself is a fixed record; this list keeps moving after it, and is maintained independently.
 
 <a id="contents"></a>
 ## Contents
@@ -41,7 +41,7 @@ Currently indexing **567 papers** (385 cited in the survey text plus 182 additio
 - [Background and Definitions](#background-and-definitions) (19)
 - [Loop Paradigms](#loop-paradigms) (36)
 - [Loop Mechanics](#loop-mechanics) (83)
-- [Trained Loops](#trained-loops) (68)
+- [Trained Loops](#trained-loops) (69)
 - [Skills](#skills) (77)
 - [Harnesses and Orchestration](#harnesses-and-orchestration) (94)
 - [Evaluation](#evaluation) (65)
@@ -405,7 +405,7 @@ Libraries that train the model inside an agent loop, and the harnesses and bench
 ## Trained Loops
 
 <details>
-<summary><b>Show 68 papers</b></summary>
+<summary><b>Show 69 papers</b></summary>
 
 - [ToRL: Scaling Tool-Integrated RL](https://arxiv.org/abs/2503.23383) — Li et al. 2025
 - [DeepResearcher: Scaling Deep Research via Reinforcement Learning in Real-World Environments](https://arxiv.org/abs/2504.03160) — Zheng et al. 2025
@@ -455,7 +455,7 @@ Libraries that train the model inside an agent loop, and the harnesses and bench
 - [ToolAnchor: Anchoring Counterfactual Context to Boost Agentic Tool-use Capability](https://arxiv.org/abs/2607.14145) — Liu et al. 2026
 - [Compiling Agentic Workflows into LLM Weights: Near-Frontier Quality at Two Orders of Magnitude Less Cost](https://arxiv.org/abs/2605.22502) — Dennis et al. 2026
 
-*Additional 2026 reading (21), curated alongside the survey (not yet cited in the paper text):*
+*Additional 2026 reading (22), curated alongside the survey (not yet cited in the paper text):*
 
 - [EnvRL: Learn from Environment Dynamics in Agentic Reinforcement Learning](https://arxiv.org/abs/2606.17680) — Wang et al. 2026 · RL method exploiting environment dynamics signals to address sparse rewards in agentic training.
 - [Open-SWE-Traces: Advancing Dual-Mode Multilingual Distillation for Software Engineering Agents](https://arxiv.org/abs/2606.16038) — Ahmad et al. 2026 · Large multilingual trajectory dataset for distilling software-engineering agent behavior.
@@ -465,7 +465,6 @@ Libraries that train the model inside an agent loop, and the harnesses and bench
 - [Entropy Pacing Policy Optimization for Multi-Task Agentic Reinforcement Learning](https://arxiv.org/abs/2607.07178) — Hu et al. 2026 · Entropy-pacing RL policy optimization for generalist multi-task agentic LLMs.
 - [CRAFT: Counterfactual Credit Assignment from Free Sibling Rollouts for Self-Distilled Agentic Reinforcement Learning](https://arxiv.org/abs/2606.29476) — Meng et al. 2026 · Token-level self-distillation with counterfactual sibling rollouts to improve credit assignment in agentic RL.
 - [Reward Modeling for Multi-Agent Orchestration](https://arxiv.org/abs/2606.13598) — Tsang et al. 2026 · Self-supervised reward model for evaluating and training multi-agent orchestration quality.
-- [MultiAgent-OPD: End-to-End Training of Hierarchical Multi-Agent Systems with On-Policy Distillation](https://arxiv.org/abs/2610.23234) — Sun et al. 2026
 - [Scaling Agentic Capabilities via Grounded Interaction Synthesis](https://arxiv.org/abs/2606.02001) — Shi et al. 2026 · Grounded interaction synthesis pipeline scaling agentic training data without costly human annotation.
 - [ProAct: Agentic Lookahead in Interactive Environments](https://arxiv.org/abs/2602.05327) — Yu et al. 2026 · Two-stage training internalizes lookahead simulation to reduce compounding errors in long-horizon agent planning.
 - [SWE-Master: Unleashing the Potential of Software Engineering Agents via Post-Training](https://arxiv.org/abs/2602.03411) — Song et al. 2026 · Reproducible post-training pipeline for SWE agents combining trajectory synthesis, SFT, and execution-feedback RL.
@@ -479,6 +478,7 @@ Libraries that train the model inside an agent loop, and the harnesses and bench
 - [Agentic-DPO: From Imitation to Agentic Policy Optimization on Expert Trajectories](https://arxiv.org/abs/2607.10601) — Chen et al. 2026 · Converts expert trajectories into state-level action preferences, matching online GRPO on tau-bench without online rollouts or a reward model.
 - [TCPO: Turn-Level Credit Policy Optimization](https://arxiv.org/abs/2608.01667) — Liao et al. 2026 · Separates a verifier score from credit in multi-turn RL: a score rates the current output, while credit should say how the turn changed the refinement trajectory, built from retrospective, hindsight and counterfactual comparisons.
 - [Teaching LLMs to Learn Tool Trialing and Execution through Environment Interaction](https://arxiv.org/abs/2601.12762) — Gao et al. 2026 · Trains a trial-then-execute tool loop into the weights: SFT on DeepSeek-V3.1 trajectories, built from 1,500 ToolBench queries, that try each tool and self-correct, then GRPO on 800 more. On StableToolBench, Qwen2.5-7B goes from 43.4 to 66.4 in solvable pass rate, ahead of the best RL baseline at 58.4 and of GPT-4o zero-shot at 60.2, but on the out-of-domain ToolHop it still trails GPT-4o, 37.4 against 45.3. The pass rates are graded by GPT-4o, and the released pipeline trains against MirrorAPI-Cache, a model that simulates the APIs.
+- [MultiAgent-OPD: End-to-End Training of Hierarchical Multi-Agent Systems with On-Policy Distillation](https://arxiv.org/abs/2610.23234) — Sun et al. 2026 · Trains the delegation loop of a Leader-Searcher-Answerer team into one shared Qwen3-4B-Instruct policy: the Leader decides when to send another wave of sub-questions and when to hand over to the Answerer and learns from whether the final answer is right, while the Searchers' own query-and-read loops learn token by token from a frozen teacher trained first in a plain Searcher-Answerer pipeline. Over seven open-domain QA sets it averages 38.68% exact match against 34.62% with a prompted judge of Searcher reports and 37.37% for Tree-GRPO, and Searchers trained on the final-answer reward stop searching altogether and fall to 17.78%. The intervals cover four attempts of fixed checkpoints, not repeated training, each system runs at its own step limit, MultiAgent-OPD with about twice the searches and input tokens of the teacher's pipeline, and no code is released.
 
 </details>
 
@@ -893,9 +893,9 @@ Thanks to everyone who has suggested, verified, or annotated a paper here:
 
 | | Contributor | Contributed |
 |---|---|---|
+| <a href="https://github.com/sunyuhan19981208"><img src="https://github.com/sunyuhan19981208.png?size=48" width="48" height="48" alt="@sunyuhan19981208"></a> | **[@sunyuhan19981208](https://github.com/sunyuhan19981208)** | MultiAgent-OPD, which trains the Searchers of a Leader-Searcher-Answerer team from a frozen teacher and the other two roles from the final answer, submitted by its first author, under Trained Loops ([#8](https://github.com/js-lee-AI/awesome-agent-loop-papers/pull/8)); the TaoLive report on training a compact model to keep working as its harness changes, under Harnesses and Orchestration. Submitted by one of its authors to the sibling list ([#15](https://github.com/js-lee-AI/awesome-llm-agent-papers/pull/15)) and carried over here, where it fits better |
 | <a href="https://github.com/WhymustIhaveaname"><img src="https://github.com/WhymustIhaveaname.png?size=48" width="48" height="48" alt="@WhymustIhaveaname"></a> | **[@WhymustIhaveaname](https://github.com/WhymustIhaveaname)** | AgonAlpha, alpha mining whose reviewer reruns each candidate and can veto it, and AutoSR, symbolic regression run as a search over research states, under Loop Mechanics, both submitted by one of their co-first authors ([#7](https://github.com/js-lee-AI/awesome-agent-loop-papers/pull/7)); Agon, a research orchestrator built from producer and critic loops, under Harnesses and Orchestration, and SciΠvot, a benchmark of research decisions built from senior researchers' corrections, under Evaluation, both submitted by their first author ([#5](https://github.com/js-lee-AI/awesome-agent-loop-papers/pull/5)) |
 | <a href="https://github.com/passionate11"><img src="https://github.com/passionate11.png?size=48" width="48" height="48" alt="@passionate11"></a> | **[@passionate11](https://github.com/passionate11)** | ToolMaster, which trains a model to try tools out before relying on them, submitted by one of its two first authors, under Trained Loops ([#6](https://github.com/js-lee-AI/awesome-agent-loop-papers/pull/6)) |
-| <a href="https://github.com/sunyuhan19981208"><img src="https://github.com/sunyuhan19981208.png?size=48" width="48" height="48" alt="@sunyuhan19981208"></a> | **[@sunyuhan19981208](https://github.com/sunyuhan19981208)** | The TaoLive report on training a compact model to keep working as its harness changes, under Harnesses and Orchestration. Submitted by one of its authors to the sibling list ([#15](https://github.com/js-lee-AI/awesome-llm-agent-papers/pull/15)) and carried over here, where it fits better |
 | <a href="https://github.com/dukesun99"><img src="https://github.com/dukesun99.png?size=48" width="48" height="48" alt="@dukesun99"></a> | **[@dukesun99](https://github.com/dukesun99)** | Corpus2Skill, which induces agent skills from a document corpus rather than from trajectories, submitted by one of its authors, under Skills ([#4](https://github.com/js-lee-AI/awesome-agent-loop-papers/pull/4)) |
 | <a href="https://github.com/razzant"><img src="https://github.com/razzant.png?size=48" width="48" height="48" alt="@razzant"></a> | **[@razzant](https://github.com/razzant)** | Ouroboros, a self-developing coding-agent harness, submitted by its maintainer, under Harnesses and Orchestration ([#3](https://github.com/js-lee-AI/awesome-agent-loop-papers/pull/3)) |
 | <a href="https://github.com/reacher-z"><img src="https://github.com/reacher-z.png?size=48" width="48" height="48" alt="@reacher-z"></a> | **[@reacher-z](https://github.com/reacher-z)** | ClawBench, a live-web browser-agent benchmark, under Evaluation ([#1](https://github.com/js-lee-AI/awesome-agent-loop-papers/pull/1)) |
@@ -932,6 +932,7 @@ The field-wide companion, *LLM Agents: A Survey*, is a separate record: DOI [`10
 <a id="updates"></a>
 ## Updates
 
+- **2026-11-28**: MultiAgent-OPD added under Trained Loops by [@sunyuhan19981208](https://github.com/sunyuhan19981208), its first author. The pull request edited this README, which is generated, so it moved into the generator with an annotation. Searchers that learn from a frozen teacher bring the team to 38.68% exact match on seven QA sets, while Searchers trained on the final-answer reward stop searching and fall to 17.78%. 567 to 568.
 - **2026-11-28**: AgonAlpha and AutoSR added under Loop Mechanics by [@WhymustIhaveaname](https://github.com/WhymustIhaveaname), a co-first author of both. The pull request edited this README, which is generated, so both moved into the generator with annotations. In AgonAlpha a reviewer in a fresh context reruns each candidate and zeroed 2 of the 24 reports it audited; AutoSR keeps every probe and failed attempt in its search states and recovers three cp3-bench problems that none of 12 published systems solved. 565 to 567.
 - **2026-11-05**: ToolMaster added under Trained Loops by [@passionate11](https://github.com/passionate11), one of its two first authors. The pull request edited this README, which is generated, so it moved into the generator with an annotation. Trained to try tools before relying on them, Qwen2.5-7B goes from 43.4 to 66.4 on StableToolBench, against 60.2 for GPT-4o without training. 564 to 565.
 - **2026-10-28**: Agon added under Harnesses and Orchestration and SciΠvot under Evaluation by [@WhymustIhaveaname](https://github.com/WhymustIhaveaname), their first author. The pull request edited this README, which is generated, so both moved into the generator with annotations. On SciΠvot the best frontier model picks the senior researcher's correction over the agent's own plan 63.5% of the time, against 73.4% for researchers new to the projects. 562 to 564.
