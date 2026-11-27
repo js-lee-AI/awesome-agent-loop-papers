@@ -1,12 +1,12 @@
 <h1 align="center">🔁 Awesome Agent Loop Papers</h1>
 
 <p align="center">
-<b>565 papers and 100 open-source artifacts on the agent loop</b>: the reading list for<br>
+<b>567 papers and 100 open-source artifacts on the agent loop</b>: the reading list for<br>
 how LLM agents are controlled, trained, skilled, harnessed, evaluated, and broken.
 </p>
 
 <p align="center">
-<img src="https://img.shields.io/badge/papers-565-0F4C5C?style=flat-square&labelColor=2b2b2b" alt="papers indexed">
+<img src="https://img.shields.io/badge/papers-567-0F4C5C?style=flat-square&labelColor=2b2b2b" alt="papers indexed">
 <img src="https://img.shields.io/badge/artifacts-100-0F4C5C?style=flat-square&labelColor=2b2b2b" alt="open-source artifacts catalogued">
 <a href="https://ssrn.com/abstract=7186738"><img src="https://img.shields.io/badge/DOI-10.2139%2Fssrn.7186738-0F4C5C?style=flat-square&labelColor=2b2b2b" alt="DOI: 10.2139/ssrn.7186738"></a>
 <a href="LICENSE"><img src="https://img.shields.io/badge/License-CC--BY--4.0-0F4C5C?style=flat-square&labelColor=2b2b2b" alt="License: CC BY 4.0"></a>
@@ -32,7 +32,7 @@ Curated, section-organized reading list and artifact catalog for the survey
 
 > The survey treats the **agent loop**, not the model in isolation, as the unit of analysis: the loop *paradigms* that shape reasoning/action/search, the *trained* loops that absorb control into weights, the *mechanics* (termination, verification, context, recovery) that govern any loop, the *skills* that externalize competence into portable procedure, the *harnesses* that instantiate it, and the *evaluation* and *safety* problems it creates. This repo mirrors that structure.
 
-Currently indexing **565 papers** (385 cited in the survey text plus 180 additional curated 2026 papers, each verified against its arXiv record) across the survey's sections, plus **100 real-world open-source artifacts** (frameworks, coding harnesses, memory, context, sandbox, ingestion, tool-server and observability infrastructure, skill libraries and registries, and training and evaluation tools). The survey itself is a fixed record; this list keeps moving after it, and is maintained independently.
+Currently indexing **567 papers** (385 cited in the survey text plus 182 additional curated 2026 papers, each verified against its arXiv record) across the survey's sections, plus **100 real-world open-source artifacts** (frameworks, coding harnesses, memory, context, sandbox, ingestion, tool-server and observability infrastructure, skill libraries and registries, and training and evaluation tools). The survey itself is a fixed record; this list keeps moving after it, and is maintained independently.
 
 <a id="contents"></a>
 ## Contents
@@ -40,7 +40,7 @@ Currently indexing **565 papers** (385 cited in the survey text plus 180 additio
 - [Introduction](#introduction) (30)
 - [Background and Definitions](#background-and-definitions) (19)
 - [Loop Paradigms](#loop-paradigms) (36)
-- [Loop Mechanics](#loop-mechanics) (81)
+- [Loop Mechanics](#loop-mechanics) (83)
 - [Trained Loops](#trained-loops) (68)
 - [Skills](#skills) (77)
 - [Harnesses and Orchestration](#harnesses-and-orchestration) (94)
@@ -309,7 +309,7 @@ Libraries that train the model inside an agent loop, and the harnesses and bench
 ## Loop Mechanics
 
 <details>
-<summary><b>Show 81 papers</b></summary>
+<summary><b>Show 83 papers</b></summary>
 
 - [s1: Simple Test-Time Scaling](https://arxiv.org/abs/2501.19393) — Muennighoff et al. 2025
 - [Efficiently Scaling LLM Reasoning with Certaindex](https://arxiv.org/abs/2412.20993) — Fu et al. 2024
@@ -364,7 +364,7 @@ Libraries that train the model inside an agent loop, and the harnesses and bench
 - [FineVerify: Scaling Test-Time Compute with Fine-Grained Self-Verification for Agentic Search](https://arxiv.org/abs/2606.00660) — Zhao et al. 2026
 - [Budgeted Act-or-Defer Multi-Agent LLM Deliberation with Local Reliability Bounds](https://arxiv.org/abs/2606.29654) — Wang et al. 2026
 
-*Additional 2026 reading (29), curated alongside the survey (not yet cited in the paper text):*
+*Additional 2026 reading (31), curated alongside the survey (not yet cited in the paper text):*
 
 - [Self-Healing Agentic Orchestrators for Reliable Tool-Augmented Large Language Model Systems](https://arxiv.org/abs/2606.01416) — Babu et al. 2026 · Orchestration-level failure recovery for tool-augmented agents beyond model-level errors.
 - [Exploring Cross-Scenario Generality of Agentic Memory Systems: Diagnostics and a Strong Baseline](https://arxiv.org/abs/2606.04315) — Chen et al. 2026 · Diagnoses poor cross-scenario generalization of memory systems and proposes a strong baseline.
@@ -395,8 +395,8 @@ Libraries that train the model inside an agent loop, and the harnesses and bench
 - [Addressable Recall Compaction for Long Context-Window Control in AI Agents](https://arxiv.org/abs/2607.25066) — Dang et al. 2026 · Replaces old tool observations with addressable citations the agent can re-request, avoiding both discarding and similarity-based retrieval.
 - [Reason Less, Verify More: Deterministic Gates Recover a Silent Policy-Violation Failure Mode in Tool-Using LLM Agents](https://arxiv.org/abs/2607.07405) — Reddy et al. 2026 · Catches silent policy-violating writes with deterministic pre-execution gates, since neither the tool nor the agent's self-report exposes them.
 - [TRAJDEBUG: Tracing Error Lifecycle to Identify Critical Failures in Long-Horizon Agent Trajectories](https://arxiv.org/abs/2608.06346) — Qi et al. 2026 · Locates the earliest step actually responsible for a failure rather than any local error, using multi-granularity history compression to keep evidence scattered across a long trajectory reachable.
-- [AgonAlpha: Autonomous Alpha Discovery via Prompt Economy and Scalable Agentic Search](https://arxiv.org/abs/2608.11250) — Ye et al. 2026 · Alpha-mining loop in which a fresh-context adversarial reviewer re-executes each candidate factor and can veto it, while pending-aware allocation splits the evaluation budget across parallel workers.
-- [AutoSR: Automatic Symbolic Regression by Searching Research States](https://arxiv.org/abs/2608.16876) — Zhang et al. 2026 · Proposer and reviewer agents grow research states under progressive-widening MCTS, so each candidate equation keeps its probes, failed attempts, and independent review; recovers three cp3-bench problems that no published system solves.
+- [AgonAlpha: Autonomous Alpha Discovery via Prompt Economy and Scalable Agentic Search](https://arxiv.org/abs/2608.11250) — Ye et al. 2026 · Runs alpha mining as a propose-and-review loop: the proposer freezes each candidate as a report with its hypothesis, expression and platform evidence, a reviewer in a fresh context can rerun the evaluation and zero the score, and a scheduler that counts jobs still running splits the budget across lineages. On five authors' accounts with six model backends, 17 of 60 submissions got WorldQuant BRAIN's top grade and the reviewer zeroed 2 of the 24 reports it audited. Every figure is BRAIN's score on the same 2019 to 2023 window the formulas were selected on, with no out-of-sample result, baseline or ablation, and the repository holds the prompts and the scheduler but not the run records.
+- [AutoSR: Automatic Symbolic Regression by Searching Research States](https://arxiv.org/abs/2608.16876) — Zhang et al. 2026 · Searches over research states rather than bare equations: each node keeps a candidate equation with its motivation, numerical probes, failed attempts and an independent review, and proposer and reviewer agents grow the tree under Monte Carlo tree search with progressive widening, next to a loop that runs PySR, SISSO and FEX. On nine problems picked for difficulty it recovers an equation equivalent to the ground truth each time, including three cp3-bench problems that none of 12 published systems solved. Each case is one successful run with no repeats or ablations, the reported time counts only the session that found the answer, the paper does not name the model behind the agents, and the repository has the prompts and the scheduler but not the nine runs.
 
 </details>
 
@@ -892,8 +892,8 @@ Thanks to everyone who has suggested, verified, or annotated a paper here:
 
 | | Contributor | Contributed |
 |---|---|---|
+| <a href="https://github.com/WhymustIhaveaname"><img src="https://github.com/WhymustIhaveaname.png?size=48" width="48" height="48" alt="@WhymustIhaveaname"></a> | **[@WhymustIhaveaname](https://github.com/WhymustIhaveaname)** | AgonAlpha, alpha mining whose reviewer reruns each candidate and can veto it, and AutoSR, symbolic regression run as a search over research states, under Loop Mechanics, both submitted by one of their co-first authors ([#7](https://github.com/js-lee-AI/awesome-agent-loop-papers/pull/7)); Agon, a research orchestrator built from producer and critic loops, under Harnesses and Orchestration, and SciΠvot, a benchmark of research decisions built from senior researchers' corrections, under Evaluation, both submitted by their first author ([#5](https://github.com/js-lee-AI/awesome-agent-loop-papers/pull/5)) |
 | <a href="https://github.com/passionate11"><img src="https://github.com/passionate11.png?size=48" width="48" height="48" alt="@passionate11"></a> | **[@passionate11](https://github.com/passionate11)** | ToolMaster, which trains a model to try tools out before relying on them, submitted by one of its two first authors, under Trained Loops ([#6](https://github.com/js-lee-AI/awesome-agent-loop-papers/pull/6)) |
-| <a href="https://github.com/WhymustIhaveaname"><img src="https://github.com/WhymustIhaveaname.png?size=48" width="48" height="48" alt="@WhymustIhaveaname"></a> | **[@WhymustIhaveaname](https://github.com/WhymustIhaveaname)** | Agon, a research orchestrator built from producer and critic loops, under Harnesses and Orchestration, and SciΠvot, a benchmark of research decisions built from senior researchers' corrections, under Evaluation, both submitted by their first author ([#5](https://github.com/js-lee-AI/awesome-agent-loop-papers/pull/5)) |
 | <a href="https://github.com/sunyuhan19981208"><img src="https://github.com/sunyuhan19981208.png?size=48" width="48" height="48" alt="@sunyuhan19981208"></a> | **[@sunyuhan19981208](https://github.com/sunyuhan19981208)** | The TaoLive report on training a compact model to keep working as its harness changes, under Harnesses and Orchestration. Submitted by one of its authors to the sibling list ([#15](https://github.com/js-lee-AI/awesome-llm-agent-papers/pull/15)) and carried over here, where it fits better |
 | <a href="https://github.com/dukesun99"><img src="https://github.com/dukesun99.png?size=48" width="48" height="48" alt="@dukesun99"></a> | **[@dukesun99](https://github.com/dukesun99)** | Corpus2Skill, which induces agent skills from a document corpus rather than from trajectories, submitted by one of its authors, under Skills ([#4](https://github.com/js-lee-AI/awesome-agent-loop-papers/pull/4)) |
 | <a href="https://github.com/razzant"><img src="https://github.com/razzant.png?size=48" width="48" height="48" alt="@razzant"></a> | **[@razzant](https://github.com/razzant)** | Ouroboros, a self-developing coding-agent harness, submitted by its maintainer, under Harnesses and Orchestration ([#3](https://github.com/js-lee-AI/awesome-agent-loop-papers/pull/3)) |
@@ -931,6 +931,7 @@ The field-wide companion, *LLM Agents: A Survey*, is a separate record: DOI [`10
 <a id="updates"></a>
 ## Updates
 
+- **2026-11-28**: AgonAlpha and AutoSR added under Loop Mechanics by [@WhymustIhaveaname](https://github.com/WhymustIhaveaname), a co-first author of both. The pull request edited this README, which is generated, so both moved into the generator with annotations. In AgonAlpha a reviewer in a fresh context reruns each candidate and zeroed 2 of the 24 reports it audited; AutoSR keeps every probe and failed attempt in its search states and recovers three cp3-bench problems that none of 12 published systems solved. 565 to 567.
 - **2026-11-05**: ToolMaster added under Trained Loops by [@passionate11](https://github.com/passionate11), one of its two first authors. The pull request edited this README, which is generated, so it moved into the generator with an annotation. Trained to try tools before relying on them, Qwen2.5-7B goes from 43.4 to 66.4 on StableToolBench, against 60.2 for GPT-4o without training. 564 to 565.
 - **2026-10-28**: Agon added under Harnesses and Orchestration and SciΠvot under Evaluation by [@WhymustIhaveaname](https://github.com/WhymustIhaveaname), their first author. The pull request edited this README, which is generated, so both moved into the generator with annotations. On SciΠvot the best frontier model picks the senior researcher's correction over the agent's own plan 63.5% of the time, against 73.4% for researchers new to the projects. 562 to 564.
 - **2026-10-14**: Artifact catalog: +30 entries, 70 to 100, with every star count refreshed. A fourth table covers training and evaluation, which the catalog had left out; it holds verl, Agent Lightning and ART for training, and Harbor and SWE-bench for evaluation. Thirteen of the other twenty-five were created this year, DeepSeek Harness among them, and OpenClaw is now the most-starred entry. Daytona stays in the table, with a note that its repository was archived in June when development moved to a private codebase.
